@@ -1,0 +1,61 @@
+@media screen and (min-width: 650px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+    }
+   
+    .app-bar .app-bar__menu {
+      width: fit-content;
+    }
+    
+    .app-bar .app-bar__navigation{
+      height: 800px;
+    }
+   
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+    }
+   
+    .app-bar .app-bar__navigation ul li a {
+      display: inline-block;
+      text-align: center;
+    }
+   
+  }
+   
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 2em;
+    }
+
+  }
+   
+
+  @media screen and (min-width: 1000px) {
+
+  }
+   
+   
+  /* @media screen and (min-height: 600px) {
+    .app-bar .app-bar__navigation{
+      height: 500px;
+    }
+  }
+
+  @media screen and (min-height: 1000px) {
+    .app-bar .app-bar__navigation{
+      height: 800px;
+    }
+  }
+
+  @media screen and (min-height: 1000px) {
+    .app-bar .app-bar__navigation{
+      height: 800px;
+    }
+  }
+  */
+
+  @media screen and (min-height: 1200px) {
+    .app-bar .app-bar__navigation{
+      height: 900px;
+    }
+  } 
