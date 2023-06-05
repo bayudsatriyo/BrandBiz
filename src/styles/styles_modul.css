@@ -15,7 +15,10 @@
   /*
     AppBar
   */
-   
+  #hamburgerButton{
+    color: white;
+  } 
+
   .app-bar {
     padding: 8px 16px;
     background-color: #5291BF;
@@ -52,7 +55,7 @@
     user-select: none;
   }
    
-  .app-bar .app-bar__navigation {
+  .app-bar__navigation {
     position: absolute;
     top: 50px;
     left: -50%;
@@ -64,24 +67,25 @@
     flex-direction: column;
     align-items: center;
     overflow-x: auto;
-    height: 700px;
+    height: 100%;
   }
    
-  .app-bar .app-bar__navigation.open {
+  .app-bar__navigation.open {
     left: 0;
   }
 
-  .app-bar .app-bar__navigation ul{
+  .app-bar__navigation ul{
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 20%;
   }
 
-  .app-bar .app-bar__navigation ul li:hover{
+  .app-bar__navigation ul li:hover{
     background-color: #5291BF;
   }
 
-  .app-bar .app-bar__navigation ul li{
+  .app-bar__navigation ul li{
     border-radius: 10px;
     margin-bottom: 2%;
     width: 100%;
@@ -89,15 +93,15 @@
   }
 
 
-  .app-bar .app-bar__navigation ul li:nth-child(odd) {
+  .app-bar__navigation ul li:nth-child(odd) {
     background-color: #9DCCFF4D;
   }
   
-  .app-bar .app-bar__navigation ul li:nth-child(even) {
+  .app-bar__navigation ul li:nth-child(even) {
     background-color: #EE645B4D;
   }
    
-  .app-bar .app-bar__navigation ul li a {
+  .app-bar__navigation ul li a {
     display: inline-block;
     text-decoration: none;
     width: fit-content;
@@ -121,7 +125,6 @@
   }
    
   .content {
-    margin: 0 auto;
     min-height: 100%;
   }
    
@@ -129,8 +132,20 @@
     font-weight: normal;
   }
 
+  .deskripsi{
+    margin: 2% auto;
+  }
+
   .deskripsi p{
-    padding: 15pt 1%;
+    padding: 5pt 5%;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .deskripsi h1{
+    font-size: 18px;
+    padding: 5pt 5%;
   }
 
   .container{
@@ -140,11 +155,17 @@
   }
 
   .container img{
-    width: 70%;
+    width: 50%;
+    margin: 2% auto;
+  }
+
+  .deskripsi img{
+    width: 50%;
+    margin: 2% 25%;
   }
 
   .judul{
-    margin-bottom: 5%;
+    text-align: center;
   }
    
    
@@ -155,6 +176,7 @@
   footer {
     padding: 16px;
     background-color: #5291BF;
+    bottom: 0;
   }
    
   footer p {
