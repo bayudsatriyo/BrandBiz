@@ -1,3 +1,6 @@
+import feedback from '../templates/form_feedback';
+import feedbackInitiator from '../../utils/feedback';
+
 const Evaluasi = {
   async render() {
     return `
@@ -20,12 +23,21 @@ const Evaluasi = {
         6. Perbaikan Komunikasi dan Promosi Evaluasi dapat memberikan informasi yang penting untuk perusahaan yang berkaitan dengan cara mereka berkomunikasi dengan konsumen dan menelusuri taktik promosi. Jika evaluasi menunjukkan bahwa kampanye promosi kurang tepat, perusahaan perlu melakukan perbaikan seperti mengubah taktik promosi atau melakukan kampanye promosi yang berbeda.</p>
         <p>Dalam melakukan branding produk, evaluasi dan perbaikan adalah hal yang penting untuk dilakukan. Evaluasi dapat membantu perusahaan mengetahui kelemahan branding produk yang sudah ada dan memperbaiki kelemahan tersebut untuk meningkatkan efektifitas branding produk. Dengan demikian, perbaikan dapat membawa keberhasilan dan kesuksesan dalam branding produk.</p>
         </div>
+        <div class="feedback-form">
+        <h2>Feedback Form</h2>
+        <form id="formFeedback">
+        </form>
+        </div>
         </div>
           `;
   },
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const feedbackContainer = document.querySelector('#formFeedback');
+    feedbackContainer.innerHTML += feedback();
+    await setTimeout(() => {}, 1000);
+    feedbackInitiator(feedbackContainer);
   },
 };
 

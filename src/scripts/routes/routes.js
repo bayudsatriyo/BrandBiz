@@ -6,6 +6,7 @@ import Detail from '../views/pages/detail';
 import Merek from '../views/pages/Merek';
 import Kontent from '../views/pages/kontent';
 import Strategi from '../views/pages/strategi';
+import KuisPengenalan from '../views/kuis/kuis_pengenalan';
 import Evaluasi from '../views/pages/evaluasi';
 
 const routes = {
@@ -18,6 +19,7 @@ const routes = {
   '/kontent': Kontent,
   '/strategi': Strategi,
   '/evaluasi': Evaluasi,
+  '/kuispengenalan': KuisPengenalan,
   '/detail/:id': Detail,
 };
 

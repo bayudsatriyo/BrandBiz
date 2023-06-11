@@ -2,6 +2,10 @@
     .app-bar .app-bar__brand h1 {
       font-size: 1.5em;
     }
+
+    #hamburgerButton{
+      font-size: 15pt;
+    } 
    
     .app-bar .app-bar__menu {
       width: fit-content;
@@ -23,6 +27,10 @@
     .app-bar .app-bar__brand h1 {
       font-size: 2em;
     }
+
+    #hamburgerButton{
+      font-size: 20pt;
+    } 
 
   }
    

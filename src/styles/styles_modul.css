@@ -17,6 +17,9 @@
   */
   #hamburgerButton{
     color: white;
+    right: 2%;
+    position: absolute;
+    font-size: 15pt;
   } 
 
   .app-bar {
@@ -56,9 +59,9 @@
   }
    
   .app-bar__navigation {
-    position: absolute;
-    top: 50px;
-    left: -50%;
+    position: fixed;
+    top: 55px;
+    right: -50%;
     width: 30%;
     transition: all 0.3s;
     padding: 8px;
@@ -67,11 +70,18 @@
     flex-direction: column;
     align-items: center;
     overflow-x: auto;
-    height: 100%;
+    height: calc(100% - 56px);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    z-index: 100;
+  }
+
+  .app-bar__navigation::-webkit-scrollbar {
+    display: none;
   }
    
   .app-bar__navigation.open {
-    left: 0;
+    right: 0;
   }
 
   .app-bar__navigation ul{
@@ -99,6 +109,14 @@
   
   .app-bar__navigation ul li:nth-child(even) {
     background-color: #EE645B4D;
+  }
+
+  .app-bar__navigation ul li:nth-child(odd):hover {
+    background-color: #3998ff4d;
+  }
+  
+  .app-bar__navigation ul li:nth-child(even):hover {
+    background-color: #ec21124d;
   }
    
   .app-bar__navigation ul li a {
@@ -152,6 +170,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .container img{
@@ -166,6 +185,93 @@
 
   .judul{
     text-align: center;
+  }
+
+  /* formulir feedback */
+  .feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  #formFeedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  #formFeedback label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  #formFeedback input[type="text"],
+  #formFeedback input[type="email"],
+  #formFeedback textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #5291BF;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+ button[type="submit"]:hover {
+    background-color: #0077cc;
+  }
+
+  /* form kuis */
+  #soal-container{
+    width: 100%;
+  }
+
+  #kuis-container{
+    width: 100%;
+  }
+
+  #form-kuis {
+    width: 100%;
+  }
+  
+  #form-kuis p {
+    margin-top: 30px;
+  }
+  
+  #form-kuis label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  #form-kuis button {
+    margin-top: 20px;
   }
    
    

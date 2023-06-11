@@ -1,6 +1,11 @@
 const LogoBranding = {
   async render() {
     return `
+    <style>
+      .app-bar__navigation{
+        height: 100vh;
+      }
+    </style>
       <div class="container">
       <h1 class="judul">Menerapkan Visual Branding</h1>
       <img src="https://i.postimg.cc/9XdQwCFd/top-view-working-tools.jpg" alt="LogoBranding" crossorigin="anonymous">
@@ -20,6 +25,11 @@ const LogoBranding = {
       <br>
       <p>Selain itu, konsistensi merupakan kunci keberhasilan dalam visual branding. Semua elemen visual branding harus konsisten dalam setiap media yang digunakan untuk membangun merek. Hal ini akan membantu para pelanggan tetap mengingat dan terhubung dengan merek UMKM dengan mudah.</p>
       <p>Visual branding yang baik dapat membantu produk UMKM untuk menarik minat pelanggan dan membedakan produk mereka dari pesaing. Konsumen cenderung lebih tertarik pada produk yang memiliki identitas merek yang kuat dan terlihat profesional. Dengan melalui visual branding yang baik, UMKM dapat memperkuat mereknya dan membangun kesetiaan pelanggan yang lebih baik.</p>
+      </div>
+      <div class="feedback-form">
+      <h2>Feedback Form</h2>
+      <form id="formFeedback">
+      </form>
       </div>
       </div>
         `;
