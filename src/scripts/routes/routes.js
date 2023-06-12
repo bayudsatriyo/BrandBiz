@@ -6,21 +6,22 @@ import Detail from '../views/pages/detail';
 import Merek from '../views/pages/Merek';
 import Kontent from '../views/pages/kontent';
 import Strategi from '../views/pages/strategi';
-import KuisPengenalan from '../views/kuis/kuis_pengenalan';
+import KuisPage from '../views/kuis/kuis';
 import Evaluasi from '../views/pages/evaluasi';
 
 const routes = {
-  '/': Introduction, // default page
-  '/introduction': Introduction,
-  '/pengenalan': Pengenalan,
-  '/logo': LogoBranding,
-  '/analisis': Analisis,
-  '/merek': Merek,
-  '/kontent': Kontent,
-  '/strategi': Strategi,
-  '/evaluasi': Evaluasi,
-  '/kuispengenalan': KuisPengenalan,
-  '/detail/:id': Detail,
+  '/': [Introduction, ''], // default page
+  '/introduction': [Introduction, ''],
+  '/pengenalan': [Pengenalan, ''],
+  '/logo': [LogoBranding, ''],
+  '/analisis': [Analisis, ''],
+  '/merek': [Merek, ''],
+  '/kontent': [Kontent, ''],
+  '/strategi': [Strategi, ''],
+  '/evaluasi': [Evaluasi, ''],
+  '/kuispengenalan': [KuisPage, 0],
+  '/kuisanalisis': [KuisPage, 1],
+  '/detail/:id': [Detail, ''],
 };
 
 export default routes;

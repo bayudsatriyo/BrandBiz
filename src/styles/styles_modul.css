@@ -263,11 +263,13 @@
   
   #form-kuis p {
     margin-top: 30px;
+    font-size: 13pt;
   }
   
   #form-kuis label {
     display: block;
     margin: 10px 0;
+    font-size: 13pt;
   }
   
   #form-kuis button {

@@ -21,11 +21,6 @@ const Kontent = {
         <p>Dalam proses pembuatan konten branding, perlu diingat bahwa tersebut tidak hanya mencakup produknya saja, tapi juga karakter dan citra merek yang ingin ditunjukkan. Oleh karena itu, penting untuk mempertimbangkan branding sebagai bagian dari 
         strategi pemasaran yang holistik, menggabungkan pencitraan dan komunikasi merek dengan kebutuhan bisnis dan pandangan jangka panjang.</p>
         </div>
-        <div class="feedback-form">
-        <h2>Feedback Form</h2>
-        <form id="formFeedback">
-        </form>
-        </div>
         </div>
           `;
   },
