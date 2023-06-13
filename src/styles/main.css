@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway&display=swap');
+
+:root{
+      --primary-color: #5291BF;
+      --background-color: #DFF2FF;
+      --text-color: #484848;
+}
+
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+html{
+      scroll-behavior: smooth;
+}
+
+body{
+      position: relative;
+      font-family: 'Raleway', sans-serif;
+      width: 100%;
+}
+
+/* Header */
+header{
+      width: 100%;
+      /* background-color: aqua; */
+      max-width: 1200px;
+      align-items: center;
+      margin: 0px auto ;
+}
+    
+nav{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      padding: 10px;
+      z-index: 98;
+}
+
+.nav-title img{
+     height: 80px;
+}
+
+.nav-title span{
+      color: var(--secondary-color) ;
+}
+
+#hamburgerButton{
+      min-width: 44px;
+      min-height: 44px;
+      font-size: 20px;
+      font-weight: 400;
+      background-color: var(--secondary-color);
+      border: none;
+      border-radius: 2px;
+      background-color: #DFF2FF;
+}
+
+.nav-list{
+      display: none;
+      top: 0;
+      left: 0;
+      position: absolute;
+      align-items: center;
+}
+
+.active li{
+      width: 100%;
+      margin: 20px 0px;
+      list-style: none;
+      padding: 10px 0px;
+}
+
+.active li:hover{
+      background-color: var(--primary-color);
+      color: #fff;
+}
+.nav-list li a {
+      padding: 15px;
+      font-weight: 400;
+      text-decoration: none;
+      font-weight: 600;
+      color: #5291BF;
+}
+
+.form-sign{
+      margin: auto;
+}
+
+#signIn {
+      background-color: #fff; 
+      border: none;
+      font-size: 14px;
+      padding: 5px 15px;
+      outline: 1px solid #5291BF;
+      border-radius: 5px;
+      margin-right: 10px;
+}
+
+#signUp {
+      background-color: var(--primary-color);
+      border: none;
+      font-size: 14px;
+      padding: 5px 15px;
+      color: #fff;
+      border-radius: 5px;
+      margin-right: 10px;
+}
+
+.active{
+      transition: .5s ease-in;
+      background-color: var(--secondary-color);
+      z-index: 99;
+      align-items: center;
+      display: inline-block;
+      transform: translateX(0%);
+      width: 65%;
+      height: 100vh;
+}
+
+main{
+      margin-top: 100px;
+}
+
+.headline{
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 700px;
+
+}
+
+.headline-title{
+      margin: 0 auto;
+      width: 100%;
+}
+
+.headline-title h1 {
+      width: 100%;
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 25px;
+      color: var(--text-color);
+}
+
+.title-span{
+      color: var(--primary-color);
+}
+
+.headline-title p {
+      margin-top: 10px;
+}
+
+.headline-image{
+      margin: 0 auto;
+      width: 100%;
+}
+
+.headline-image img{
+      background-size: cover;
+      width: 100%;
+}
+
+.superior{
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 700px;
+      display: flex;
+      padding: 20px;
+}
+
+.superior-list{
+      width: 100%;
+      display: block;
+}
+
+
+.superior-item img{
+      height: 44px;
+}
+
+.superior-content{ 
+      justify-content: center;
+      width: 160px;
+      margin: 10px auto;
+}
+
+.superior-content p{
+      font-size: 12px;
+      padding-top: 5px;
+}
+
+.about{
+      padding: 20px;
+}
+
+.about-container{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      background-color: var(--primary-color);
+      border-radius: 5px;
+}
+
+.about-image img{
+      object-fit: cover;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+}
+
+.about-content{
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.about-title{
+      font-size: 35px;
+      text-transform: uppercase;
+      font-family: 'Archivo Black', sans-serif;
+      color: #fff;
+}
+
+.about-title-second{
+      font-size: 45px;
+      text-transform: uppercase;
+      font-family: 'Archivo Black', sans-serif;
+      color: #fff;
+}
+
+.about-description{
+      margin: 15px 0px;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 400;
+      text-align: justify;
+}
+
+#learnMore{
+      width: fit-content;
+      align-self: end;
+      font-size: 16px;
+      padding: 15px 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border: 0;
+      border-radius: 3px;
+}
+
+.about-span{
+      color: var(--text-color);
+}
+
+.offering{
+      padding: 20px 0px;
+      text-align: center;
+}
+
+.offering-title{
+      margin: 20px;
+}
+
+.offering-title h3{
+      color: var(--text-color);
+}
+
+.offering-content{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.accordion{
+      order: 2;
+}
+
+.offering-image{
+      order: 1;
+      justify-content: center;
+}
+
+.offering-image img{
+      background-size: cover;
+      object-fit: cover;
+      height: 300px;
+      width: 100%;
+}
+
+.testimony{
+      background-color: var(--background-color);
+      margin: 20px 0px;
+      padding: 20px;
+}
+
+.testimony-container{
+      width: 100%;
+      text-align: center;
+      /* justify-content: center; */
+}
+
+.testimony-title{
+      width: 100%;
+}
+
+.testimony-title .title{
+      font-weight: 700;
+      color: var(--text-color);
+}
+
+.testimony-sub-title{
+      color: var(--text-color);
+}
+
+.testimony-list{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+}
+
+.testimony-item{
+      margin: 0 auto;
+      align-items: center;
+      margin-top: 20px;
+      border-radius: 5px;
+      padding: 15px;
+      width: 300px;
+      background-color: #fff;
+
+}
+
+.testimony-profile{
+      display: flex;
+      text-align: left;
+}
+
+.testimony-image img{
+      object-fit: cover;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+}
+
+.testimony-person{
+      margin-left: 10px;
+}
+
+.testimony-name{
+      margin: 0;
+}
+
+.description{
+      margin-top: 10px;
+      text-align: left;
+}
+
+
+/* Footer Section */
+footer{
+      justify-content: center;
+      padding: 30px;
+}
+
+.footer-container{     
+      margin: 0px auto;
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+
+.footer-logo{
+      margin: 0px auto;
+      width: 100%;
+}
+
+.footer-logo img{
+      height: 80px;
+}
+
+.footer-sosmed{
+      width: 100%;
+      margin-top: 30px;
+      display: flex;  
+      list-style: none;
+}
+
+.footer-sosmed li {
+      padding-right: 10px;
+}
+
+.footer-sosmed li img {
+      height: 25px;
+}
+
+.footer-payment{
+      margin-top: 50px
+}
+
+.payment-method{
+      list-style: none;
+      display: flex;
+}
+
+.payment-method img {
+      height: 25px;
+      padding-right: 10px;
+}
+
+.footer-right-side{
+      text-align: center;
+}
+
+.footer-links{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-content: center;
+      align-items: center;
+}
+
+.links {
+      list-style: none;
+      padding: 20px;
+}
+
+.links h6{
+      color: var(--primary-color);
+}
+
+.links li {
+      padding: 5px 0px;
+}
+
+.links li a{
+      text-decoration: none;
+      color: black;
+}
+
+
+
+
+
+@media screen and (min-width: 760px) {
+      #hamburgerButton{
+            display: none;
+      }    
+
+      .nav-list{
+            display: flex;
+            position: relative;
+      }
+
+      .nav-list li  {
+            padding: 0px 0px 5px 0px;
+            list-style: none;
+            text-align: center;
+            font-size: 14px;
+      }
+
+      .superior-content{ 
+            text-align: left;
+            margin-left: 10px;
+      }
+      
+      .superior-list{
+            width: 100%;
+            display: flex;    
+      }
+
+      .superior-item{
+            display: flex;
+      } 
+
+      .about{
+            padding: 50px;
+      }
+
+      .offering{
+            padding: 50px;
+      }
+
+      .accordion{
+            order: 2;
+      }
+      
+      .offering-image{
+            order: 2;
+      }
+
+      .testimony{
+            padding: 50px;
+      }
+
+      .footer-container{     
+            margin: 0px auto;
+            width: 100%;
+            max-width: 1200px;
+      }
+
+      .footer-left-side{
+            width: 100%;
+            text-align: left;
+        }
+
+      .footer-right-side{
+            text-align: left;
+      }
+    }

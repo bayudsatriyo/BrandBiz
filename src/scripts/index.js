@@ -1,10 +1,6 @@
 import 'regenerator-runtime';
-import '../styles/styles_modul.css';
-import '../styles/styles_responsive.css';
-
+import '../styles/main.css';
 import App from './views/app';
-
-console.log('hallo');
 
 const app = new App({
   button: document.querySelector('#hamburgerButton'),
