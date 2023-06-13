@@ -20,7 +20,10 @@ const routes = {
   '/strategi': [Strategi, ''],
   '/evaluasi': [Evaluasi, ''],
   '/kuispengenalan': [KuisPage, 0],
-  '/kuisanalisis': [KuisPage, 1],
+  '/kuisanalisis': [KuisPage, 4],
+  '/kuisvisualisasi': [KuisPage, 1],
+  '/kuiskontent': [KuisPage, 2],
+  '/kuisstrategi': [KuisPage, 3],
   '/detail/:id': [Detail, ''],
 };
 
