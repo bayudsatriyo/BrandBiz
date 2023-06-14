@@ -1,5 +1,14 @@
 import KuisDB from '../../data/kuisDB';
 import createSoal from '../templates/form_kuis';
+import createRow from '../templates/table_nilai';
+
+const generateStatus = (nilaibenar, jumlahsoal) => {
+  let standar = jumlahsoal - 3;
+  if(nilaibenar < standar){
+    return 'Tidak Lulus';
+  }
+  return 'Lulus';
+}
 
 const KuisPage = {
   async render() {
@@ -13,6 +22,19 @@ const KuisPage = {
       <button type="submit">Kirim</button>
     </form>
       </div>
+      <table id='penilaian'>
+  <thead>
+    <tr>
+      <th>Tanggal</th>
+      <th>Nama Kuis</th>
+      <th>Nilai Kuis</th>
+      <th>Presentase</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
       </div>
         `;
   },
@@ -35,6 +57,8 @@ const KuisPage = {
       event.preventDefault();
       const datasoal = [];
       let nilai = 0;
+      let today = new Date();
+      const tableBody = document.querySelector('tbody');
       // melakukan aksi lainnya setelah form disubmit
       for (let i = 0; i < soal.length; i += 1) {
         datasoal[i] = document.querySelector(`input[name="soal${i}"]:checked`);
@@ -50,8 +74,17 @@ const KuisPage = {
           }
         }
       }
+      const dataNilai = {
+        date: today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear(),
+        judul: judulKuis,
+        total: nilai,
+        presentase: (nilai / (soal.length/100)),
+        status: generateStatus(nilai, soal.length)
+      };
 
+      tableBody.innerHTML += createRow(dataNilai);
       console.log(nilai);
+
 
       datasoal.length = 0;
       console.log(datasoal);
