@@ -89,6 +89,7 @@
     flex-direction: column;
     width: 100%;
     padding-bottom: 20%;
+    align-items: center;
   }
 
   .app-bar__navigation ul li:hover{
@@ -297,6 +298,81 @@
   
   #penilaian th {
     font-weight: bold;
+  }
+
+  /* login */
+  .login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 400px;
+    margin: 50px auto;
+  }
+  
+  .login-header {
+    background-color: #4682B4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .login-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .login-main {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .login-main label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .login-main input[type="email"],
+  .login-main input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #0077cc;
+    background-color: #f4f4f4;
+    outline: none;
+  }
+  
+  .login-main .btn-submit {
+    display: inline-block;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-main .btn-submit:hover {
+    transform: scale(1.05);
+  }
+
+  .btn-logout {
+    background-color: #5291BF;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5%;
+    width: 80%;
   }
    
    

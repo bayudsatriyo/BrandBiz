@@ -3,7 +3,8 @@ const Strategi = {
     return `
         <div class="container">
         <h1 class="judul">Strategi Marketing Dalam Branding</h1>
-        <img src="https://i.postimg.cc/438CxnTB/2001-i039-031-branding-isometric-concept-icons-10.jpg" alt="introduction" crossorigin="anonymous">
+        <br>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/vxjLDc8aQ5k" title="Kelas Fantastic Brand | Belajar Branding Produk Strategi Branding yang Mudah dan Ampuh Bagi UMKM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="deskripsi">
         <h1>Apakah ada Strategi Khusus yang harus diterapkan dalam Branding ? <br>
         Apa Strategi Marekting dalam branding itu ?</h1>

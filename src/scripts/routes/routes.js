@@ -8,9 +8,10 @@ import Kontent from '../views/pages/kontent';
 import Strategi from '../views/pages/strategi';
 import KuisPage from '../views/kuis/kuis';
 import Evaluasi from '../views/pages/evaluasi';
+import Login from '../views/reg_log/login';
 
 const routes = {
-  '/': [Introduction, ''], // default page
+  '/': [Login, ''], // default page
   '/introduction': [Introduction, ''],
   '/pengenalan': [Pengenalan, ''],
   '/logo': [LogoBranding, ''],
@@ -20,10 +21,10 @@ const routes = {
   '/strategi': [Strategi, ''],
   '/evaluasi': [Evaluasi, ''],
   '/kuispengenalan': [KuisPage, 0],
-  '/kuisanalisis': [KuisPage, 4],
   '/kuisvisualisasi': [KuisPage, 1],
   '/kuiskontent': [KuisPage, 2],
   '/kuisstrategi': [KuisPage, 3],
+  '/kuisanalisis': [KuisPage, 4],
   '/detail/:id': [Detail, ''],
 };
 

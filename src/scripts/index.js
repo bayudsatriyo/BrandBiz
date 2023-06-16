@@ -12,6 +12,16 @@ const app = new App({
   content: document.querySelector('#mainContent'),
 });
 
+const logout = document.querySelector('.btn-logout');
+logout.addEventListener('click', (event) => {
+  event.preventDefault();
+  const navdrawer = document.querySelector('#hamburgerButton');
+  localStorage.removeItem("user");
+  console.log(app)
+  navdrawer.click();
+  location.assign("#/");
+})
+
 window.addEventListener('hashchange', () => {
   app.renderPage();
 });

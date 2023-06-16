@@ -1,6 +1,8 @@
 import KuisDB from '../../data/kuisDB';
 import createSoal from '../templates/form_kuis';
 import createRow from '../templates/table_nilai';
+import userAkun from '../../data/users';
+import kuisPost from '../../data/kuisPost';
 
 const generateStatus = (nilaibenar, jumlahsoal) => {
   let standar = jumlahsoal - 3;
@@ -41,16 +43,22 @@ const KuisPage = {
 
   async afterRender(indexkuis) {
     // Fungsi ini akan dipanggil setelah render()
+    let kuisUser = JSON.parse(localStorage.getItem('user'));
     const soalContainer = document.getElementById('soal-container');
     const kuis = await KuisDB.get();
     const { soal } = kuis[indexkuis];
     const judulKuis = kuis[indexkuis].judul;
     const judul = document.querySelector('.judul');
+    const tableBody = document.querySelector('tbody');
     console.log(judulKuis);
     judul.innerHTML = judulKuis;
     soal.forEach((perSoal, index) => {
       soalContainer.innerHTML += createSoal(perSoal, index);
     });
+    console.log(kuisUser[0].user.nilai[indexkuis]);
+    if(kuisUser[0].user.nilai[indexkuis] !== undefined){
+      tableBody.innerHTML = createRow(kuisUser[0].user.nilai[indexkuis]);
+    }
     const buttonSubmit = document.getElementById('form-kuis');
     buttonSubmit.addEventListener('submit', (event) => {
       // menghentikan aksi bawaan form
@@ -58,7 +66,6 @@ const KuisPage = {
       const datasoal = [];
       let nilai = 0;
       let today = new Date();
-      const tableBody = document.querySelector('tbody');
       // melakukan aksi lainnya setelah form disubmit
       for (let i = 0; i < soal.length; i += 1) {
         datasoal[i] = document.querySelector(`input[name="soal${i}"]:checked`);
@@ -78,13 +85,29 @@ const KuisPage = {
         date: today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear(),
         judul: judulKuis,
         total: nilai,
-        presentase: (nilai / (soal.length/100)),
+        presentase: Math.round(nilai / (soal.length/100)),
         status: generateStatus(nilai, soal.length)
       };
-
-      tableBody.innerHTML += createRow(dataNilai);
-      console.log(nilai);
-
+      if(kuisUser[0].user.nilai[indexkuis] != undefined){
+        kuisUser[0].user.nilai.splice(indexkuis, 1, dataNilai);
+        console.log("nilai yang sudah ada diganti")
+      }else{
+        kuisUser[0].user.nilai.splice(indexkuis, 0, dataNilai);
+        console.log('nilai ditambahkan')
+      }
+      
+      localStorage.setItem('user', JSON.stringify(kuisUser));
+      console.log(kuisUser[0].user.nilai[indexkuis]);
+      const data = {
+        users_id: kuisUser[0].user.id,
+        nilai: kuisUser[0].user.nilai
+      };
+      kuisPost.post(data.users_id, data)
+      tableBody.innerHTML = createRow(kuisUser[0].user.nilai[indexkuis]);
+      for (let i = 0; i < soal.length; i += 1) {
+        datasoal[i] = document.querySelector(`input[name="soal${i}"]:checked`);
+        datasoal[i].checked = false;
+        }
 
       datasoal.length = 0;
       console.log(datasoal);

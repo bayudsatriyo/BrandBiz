@@ -3,7 +3,8 @@ const Pengenalan = {
     return `
     <div class="container">
     <h1 class="judul">Pentingnya Branding Produk Industri UMKM</h1>
-    <img src="https://i.postimg.cc/G2KZTYDn/sustainablebranding-1024x621.jpg" alt="introduction" crossorigin="anonymous">
+    <br>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/chQrV-SAjwA" title="BRANDING: Jualan Tanpa Bicara Spek, Angka, dan Kualitas Produknya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="deskripsi">
     <p>Branding menjadi salah satu fokus utama yang dikejar oleh para pelaku usaha. 
     Namun, kebanyakan UMKM mulai berjualan tanpa punya brand atau merek. Padahal adanya merek membuat pemasaran menjadi lebih mudah dalam memasarkan produk. 
