@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+section {
+      padding: 30px;
+}
+
+
+.learning-hero{
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+}
+
+.learning-hero-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax( 250px, 1fr));
+}
+
+.learning-hero-content{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      order: 2;
+}
+
+.learning-hero-content h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px;
+      max-width: 400px;
+      letter-spacing: 2px;
+}
+
+.learning-hero-description{
+      text-align: center;
+      margin: 30px auto;
+      max-width: 300px;
+      padding: 10px 5px;
+}
+
+.learning-hero-description p{
+      font-size: 14px;
+}
+
+.learning-hero-image{
+      text-align: center;
+      order: 1;
+      margin-bottom: 50px;
+}
+
+.learning-hero-image img {
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+}
+
+.learning-hero-content form {
+      margin-top: 10px;
+}
+
+.learning-hero-content form button {
+      padding: 15px 30px;
+      font-size: 14px;
+      margin-right: 10px;
+}
+
+#getStarted {
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      transition: .1s ease-in;
+      cursor: pointer;
+}
+
+#getStarted:hover{
+      background-color: #0c171f;
+      border: 1px solid #0c171f;
+}
+
+#learnMore{
+      cursor: pointer;
+      background-color: #fff;
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
+      transition: .1s ease-in;
+}
+
+#learnMore:hover{
+      background-color: var(--background-color);
+}
+
+/* Discover Session */
+.learning-discover{
+      margin: 100px auto;
+      width: 100%;
+      height: auto;
+}
+
+.learning-discover h1 {
+      font-size: 40px;
+      font-weight: 600;
+      color: var(--text-color);
+      text-align: center;
+}
+
+.learning-discover-container-1{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      width: 100%;
+      gap: 10px;
+      position: relative;
+}
+
+.discover-item{
+      height: 400px;
+      width: 100%;
+      position: relative;
+      border-radius: 10px;  
+}
+
+.discover-item img{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      object-fit: cover;
+      background-position: center;
+      border-radius: 10px;  
+}
+
+.discover-modul{     
+      margin-top: 20px;
+      text-align: left;
+      padding: 30px;
+      position: absolute;
+      top: 0 ;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+}
+
+.discover-modul h1 {
+      font-size: 30px;
+      text-align: left;
+}
+
+.profile{
+      margin-top: 10px;
+      display: flex;
+      width: 100%;
+}
+
+.profile-image{
+      margin-right: 10px; 
+}
+
+.profile-image img{
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+}
+
+.discover-modul h2 {
+      color: #fff;
+}
+
+.profile-name{
+      margin: auto 0;
+      font-size: 14px;
+}
+
+.profile-name-2{
+      color: #fff;
+      margin: auto 0;
+      font-size: 14px;
+}
+
+.learning-discover-container-2{
+      margin-top: 10px;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+}
+
+.modul-item{
+      width: 100%;
+      position: relative;
+}
+
+.modul-item img{
+      border-radius: 5% 5% 0% 0%;
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+}
+
+.modul-description{
+      background-color: var(--primary-color);
+      width: 100%;
+      padding: 20px;
+      border-radius: 0% 0% 5% 5%;
+
+}
+
+.modul-item .image-avatar{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      right: 2%;
+      top:  45%;
+      border-radius: 50%;
+}
+
+.modul-description{
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+}
+
+.modul-description .name   {
+      font-size: 15px;
+}
+
+.modul-description  span {
+      color: #00E995;
+      font-size: larger;
+}
+
+.modul-description h3{
+      margin-top: 15px;
+      color: #fff;
+}
+
+.modul-description .status{
+      margin-top: 10px;
+      color: var(--text-color);
+}
+
+
+
+@media screen and (min-width: 760px) {
+
+      .learning-hero-content{
+            order: 1;
+            text-align: left;
+      }
+
+      .learning-hero-image{
+            margin-bottom: 0px;
+            order: 2 ;
+      }
+
+      .learning-hero-description{
+            border-left: 2px solid black;
+            text-align: left;
+            margin: 15px 0px;
+      }
+
+
+      .profile-image img {
+            height: 44px;
+            width: 44px;
+      }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+      .learning-discover-container-1{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+      }
+
+
+      .discover-modul h1{
+            width: 60%;
+            font-size: 35px;
+            
+      }
+
+      .discover-modul h2 {
+            width: 50%;
+            font-size: 27px;
+            
+      }
+
+}
