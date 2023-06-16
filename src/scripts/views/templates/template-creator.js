@@ -2,20 +2,14 @@ const createTestimonyItemTemplate = (testimony) => `
 
 <div class="testimony-item">
             <div class="testimony-profile">
-              <div class="testimony-image">
-                <img
-                  src="${testimony.avatar}"
-                  alt=""
-                />
-              </div>
               <div class="testimony-person">
-                <p class="testimony-name">${testimony.name}</p>
-                <p class="testimony-position">${testimony.position}</p>
+                <h3 class="testimony-name">${testimony.nama}</h3>
+                <h6 class="testimony-position">${testimony.jabatan}</h6>
               </div>
             </div>
             <div class="description">
               <p>
-               "${testimony.testimony}"
+               "${testimony.feedback}"
               </p>
             </div>
           </div>
