@@ -29,6 +29,10 @@ class App {
       location.assign("#/");
       this._content.innerHTML = await page[0].render();
       await page[0].afterRender(); 
+    }else if(checksession == 'register'){
+      location.assign("#/signin");
+      this._content.innerHTML = await page[0].render();
+      await page[0].afterRender();
     }else{
       this._content.innerHTML = await page[0].render();
       if(page[1] === ''){

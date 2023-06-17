@@ -9,9 +9,11 @@ import Strategi from '../views/pages/strategi';
 import KuisPage from '../views/kuis/kuis';
 import Evaluasi from '../views/pages/evaluasi';
 import Login from '../views/reg_log/login';
+import signIn from '../views/reg_log/signin';
 
 const routes = {
-  '/': [Login, ''], // default page
+  '/': [Login, ''],
+  '/signin': [signIn, 'register'], // default page
   '/introduction': [Introduction, ''],
   '/pengenalan': [Pengenalan, ''],
   '/logo': [LogoBranding, ''],

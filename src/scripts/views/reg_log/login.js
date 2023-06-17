@@ -1,15 +1,12 @@
 import LoginPost from "../../data/loginPost";
-import userAkun from "../../data/users";
 
 async function generateLogin(user) {
     const userLogin = await LoginPost.post(user);
-    userAkun.splice(0, userAkun.length, userLogin);
-    console.log(userAkun);
     console.log(userLogin)
     if(userLogin == null){
         alert('email atau password yang anda masukan salah');
     }else{
-    localStorage.setItem("user", JSON.stringify(userAkun));
+    localStorage.setItem("user", JSON.stringify(userLogin));
     location.assign("#/introduction");
     }
 };
@@ -33,6 +30,9 @@ const Login = {
                   <input type="password" id="password" name="password" required>
               </div>
               <div class="form-group">
+              <span>Don't have an account?<a href="#/signin" id="signin"> Sign up<span>
+              </div>
+              <div class="form-group">
                   <button class="btn-submit">Login</button>
               </div>
           </form>
@@ -46,6 +46,7 @@ const Login = {
       // Fungsi ini akan dipanggil setelah render()
       const formLogin = document.getElementById('form-login');
       const hamburger = document.getElementById('hamburgerButton');
+      const signIn = document.getElementById('signin');
       hamburger.setAttribute('hidden', '');
       formLogin.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -58,6 +59,12 @@ const Login = {
         console.log(user);
         hamburger.removeAttribute('hidden');
         generateLogin(user);
+        formLogin.reset();
+      })
+      signIn.addEventListener('click', (event) => {
+        event.preventDefault();
+        localStorage.setItem('user', 'register');
+        location.assign("#/signin");
         formLogin.reset();
       })
     },

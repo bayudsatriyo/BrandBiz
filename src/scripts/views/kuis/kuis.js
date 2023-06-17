@@ -55,9 +55,9 @@ const KuisPage = {
     soal.forEach((perSoal, index) => {
       soalContainer.innerHTML += createSoal(perSoal, index);
     });
-    console.log(kuisUser[0].user.nilai[indexkuis]);
-    if(kuisUser[0].user.nilai[indexkuis] !== undefined){
-      tableBody.innerHTML = createRow(kuisUser[0].user.nilai[indexkuis]);
+    console.log(kuisUser.user.nilai[indexkuis]);
+    if(kuisUser.user.nilai[indexkuis] !== undefined){
+      tableBody.innerHTML = createRow(kuisUser.user.nilai[indexkuis]);
     }
     const buttonSubmit = document.getElementById('form-kuis');
     buttonSubmit.addEventListener('submit', (event) => {
@@ -88,22 +88,22 @@ const KuisPage = {
         presentase: Math.round(nilai / (soal.length/100)),
         status: generateStatus(nilai, soal.length)
       };
-      if(kuisUser[0].user.nilai[indexkuis] != undefined){
-        kuisUser[0].user.nilai.splice(indexkuis, 1, dataNilai);
+      if(kuisUser.user.nilai[indexkuis] != undefined){
+        kuisUser.user.nilai.splice(indexkuis, 1, dataNilai);
         console.log("nilai yang sudah ada diganti")
       }else{
-        kuisUser[0].user.nilai.splice(indexkuis, 0, dataNilai);
+        kuisUser.user.nilai.splice(indexkuis, 0, dataNilai);
         console.log('nilai ditambahkan')
       }
       
       localStorage.setItem('user', JSON.stringify(kuisUser));
-      console.log(kuisUser[0].user.nilai[indexkuis]);
+      console.log(kuisUser.user.nilai[indexkuis]);
       const data = {
-        users_id: kuisUser[0].user.id,
-        nilai: kuisUser[0].user.nilai
+        users_id: kuisUser.user.id,
+        nilai: kuisUser.user.nilai
       };
       kuisPost.post(data.users_id, data)
-      tableBody.innerHTML = createRow(kuisUser[0].user.nilai[indexkuis]);
+      tableBody.innerHTML = createRow(kuisUser.user.nilai[indexkuis]);
       for (let i = 0; i < soal.length; i += 1) {
         datasoal[i] = document.querySelector(`input[name="soal${i}"]:checked`);
         datasoal[i].checked = false;

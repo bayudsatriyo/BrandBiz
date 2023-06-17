@@ -306,7 +306,7 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     overflow: hidden;
-    width: 400px;
+    width: 55%;
     margin: 50px auto;
   }
   
@@ -374,6 +374,95 @@
     margin-top: 5%;
     width: 80%;
   }
+
+  /* sign in */
+  .signin-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 60%;
+    margin: 50px auto;
+  }
+  
+  .signin-header {
+    background-color: #4682B4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .signin-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .signin-main {
+    padding: 20px;
+  }
+
+  .signin-main input[type="email"],
+  .signin-main input[type="text"],
+  .signin-main input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #0077cc;
+    background-color: #f4f4f4;
+    outline: none;
+  }
+
+  .signin-main input[type="password"]{
+    width: 85%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #0077cc;
+    background-color: #f4f4f4;
+    outline: none;
+  }
+
+  .signin-main #showPassword{
+    width: auto;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .signin-main .inputan {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .signin-main .btn-submit {
+    display: inline-block;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .signin-main .btn-submit:hover {
+    transform: scale(1.05);
+  }
+
+  .signin-main .inputPassword{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+
    
    
   /*
