@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('./e-learning.css');
-
+@import url('./news.css');
 :root{
       --primary-color: #5291BF;
       --background-color: #DFF2FF;
@@ -303,7 +304,6 @@ main{
 .testimony-container{
       width: 100%;
       text-align: center;
-      /* justify-content: center; */
 }
 
 .testimony-title{
@@ -442,9 +442,6 @@ footer{
       text-decoration: none;
       color: black;
 }
-
-
-
 
 
 @media screen and (min-width: 760px) {
