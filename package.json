@@ -1,11 +1,12 @@
 {
   "name": "brandbiz",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project BrandBiz adalah aplikasi learning tentang Branding Produk untuk UMKM dengan sistem Mobile First",
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"  },
+    "build": "webpack --config webpack.prod.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -27,5 +28,13 @@
   },
   "dependencies": {
     "regenerator-runtime": "^0.13.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayudsatriyo/BrandBiz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bayudsatriyo/BrandBiz/issues"
+  },
+  "homepage": "https://github.com/bayudsatriyo/BrandBiz#readme"
 }

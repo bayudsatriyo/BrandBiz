@@ -200,8 +200,9 @@ section {
 .modul-description{
       background-color: var(--primary-color);
       width: 100%;
-      padding: 20px;
+      padding: 10px;
       border-radius: 0% 0% 5% 5%;
+      height: 300px;
 
 }
 
@@ -210,7 +211,7 @@ section {
       width: 50px;
       position: absolute;
       right: 2%;
-      top:  45%;
+      top:  41%;
       border-radius: 50%;
 }
 

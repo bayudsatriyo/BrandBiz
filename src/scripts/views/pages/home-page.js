@@ -42,17 +42,17 @@ const Homepage = {
           <div class="superior-content">
             <h4 class="superior-title">User friendly</h4>
             <p class="superior-description">
-              
+            website ini dibangun dengan sederhana, sehingga pengguna nyaman dan tidak kebingungan saat memakai pertama kali
+
             </p>
           </div>
         </div>
         <div class="superior-item">
           <img src="./item/Super 1.png" alt="" />
           <div class="superior-content">
-            <h4 class="superior-title">Belajar Secara Online</h4>
+            <h4 class="superior-title">Konten yang menarik</h4>
             <p class="superior-description">
-              Belajar online melalui BrandBiz memberikan fleksibilitas akses
-              dan waktu.
+            BrandBiz menyediakan konten pembelajaran tentang cara umkm dapat mengembangkan branding bagi usaha mereka, baik bagi pembisnis pemula hingga pembisnis ahli
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Homepage = {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                Accordion Item #1
+              Unggul
               </button>
             </h2>
             <div
@@ -108,9 +108,7 @@ const Homepage = {
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is
-                the first item's accordion body.
+              Produk kami memiliki fitur-fitur unggul yang membedakan kami dari pesaing.
               </div>
             </div>
           </div>
@@ -124,7 +122,7 @@ const Homepage = {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Accordion Item #2
+              Terpercaya
               </button>
             </h2>
             <div
@@ -133,10 +131,7 @@ const Homepage = {
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is
-                the second item's accordion body. Let's imagine this being
-                filled with some actual content.
+                BranBiz dapat dipercaya oleh mitra perusahaan besar
               </div>
             </div>
           </div>
@@ -150,7 +145,7 @@ const Homepage = {
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                Accordion Item #3
+                Terjangkau
               </button>
             </h2>
             <div
@@ -159,13 +154,7 @@ const Homepage = {
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is
-                the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the
-                space to make it look, at least at first glance, a bit more
-                representative of how this would look in a real-world
-                application.
+                Dapatkan kualitas konten premium dengan sekali bayar dan harga terjangkau
               </div>
             </div>
           </div>

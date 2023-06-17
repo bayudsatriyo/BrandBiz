@@ -28,7 +28,7 @@ const ELearning = {
       <div class="discover-item">
         <img src="./image 1.png" alt="Modul" />
         <div class="discover-modul">
-          <h1>How to do Basic Jumping and how to landing safely</h1>
+          <h1>Cara jitu branding bisnis online anda</h1>
           <div class="profile">
             <div class="profile-image">
               <img src="./discover 2.png" alt="" />
@@ -43,14 +43,14 @@ const ELearning = {
       <div class="discover-item">
         <img src="./548377_620.jpg" alt="Modul" />
         <div class="discover-modul">
-          <h2>How to do Basic Jumping and how to landing safely</h2>
+          <h2>Hasilkan cuan dengan modal kecil</h2>
           <div class="profile">
             <div class="profile-image">
               <img src="./discover 2.png" alt="" />
             </div>
             <div class="profile-name-2">
               <p class="name">Thomas Hope</p>
-              <p class="views">53K views • 2 weeks ago</p>
+              <p class="views">10K views • 5 weeks ago</p>
             </div>
           </div>
         </div>
@@ -63,9 +63,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Strategi Branding untuk pemula
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">53K views  •  34 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -74,9 +74,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Desain grafis untuk branding usaha UMKM
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">5K views  •  1 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -85,9 +85,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Strategi Pemasaran Media Sosial untuk Branding
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">29K views  •  5 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -96,9 +96,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Copywriting dan Branding
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">13K views  •  14 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -107,9 +107,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Manajemen Reputasi Online
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">5K views  •  10 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -118,9 +118,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Video Marketing untuk Branding
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">100K views  •  1 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -129,9 +129,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Analisis Branding dan Pengukuran Kinerja
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">23K views  •  8 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -140,9 +140,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Kelas Fotografi Produk
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">11K views  •  2 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -151,9 +151,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Customer Relationship Management (CRM) 
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">60K views  •  4 weeks ago</p>
         </div>
       </div>
       <div class="modul-item">
@@ -162,9 +162,9 @@ const ELearning = {
           <img src="./image 10.png" alt="Avatar" class="image-avatar">
           <p class="name">Gerry Geraldi <span>•</span></p>
           <h3 class="modul-title">
-            Basic how to ride your skateboard comfortly
+          Pengalaman Pelanggan yang Membangun Merek
           </h3>  
-          <p class="status">53K views  •  2 weeks ago</p>
+          <p class="status">34K views  •  8 weeks ago</p>
         </div>
       </div>
     </div>
