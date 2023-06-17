@@ -3,17 +3,30 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Free movie catalogue for you">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+/>
   <link rel="icon" href="./favicon.png">
     <title>BrandBiz</title>
 </head>
 <body>
-  <header class="app-bar">
-    <div class="app-bar__brand">
-      <h1>BrandBiz</h1>
-    </div>
-    <div class="app-bar__menu">
+  <header class="app-bar" id="header">
+    <nav id="navHome">
+      <div class="nav-title" tabindex="0">
+        <img src="./BrandBiz-removebg.png" alt="BrandBiz Logo" />
+      </div>
+      <button id="hamburgerButtonHome">☰</button>
       <button id="hamburgerButton">☰</button>
-    </div>
+      <div id="navigationDrawerHome" class="nav-list">
+        <li><a href="#/" id="home">Home</a></li>
+        <li><a href="#/news">News</a></li>
+        <li><a href="https://github.com/Gerry-Geraldy">About Us</a></li>
+        <a href="#/login" id="signInHome">Masuk</a>
+      </div>
+    </nav>
   </header>
   <nav id="navigationDrawer" class="app-bar__navigation">
     <h1 class="nav_title">Change Modul</h1>
@@ -40,8 +53,82 @@
 </nav>
   <main id="mainContent">
   </main>
-  <footer>
-    <p>BrandBiz : Branding Your Biznis <a href="#" target="_blank" rel="noreferrer">Tim C23-R4112</a></p>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left-side">
+        <div class="footer-logo">
+          <img src="./BrandBiz-removebg.png" alt="" />
+        </div>
+        <div class="footer-sosmed">
+          <li>
+            <a href="#"><img src="./item/_TikTok.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./item/_Instagram.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./item/_Linkedin.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./item/_Twitter.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./item/_YouTube.png" alt="" /></a>
+          </li>
+        </div>
+        <div class="footer-payment">
+          <p><b>Metode Pembayaran</b></p>
+          <div class="payment-method">
+            <li>
+              <a href="#"><img src="./item/BNI.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./item/BRI.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./item/BSI.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./item/Mandiri.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./item/Permata.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./item/Jenius.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./item/Flazz.png" alt="" /></a>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-side">
+        <div class="footer-links">
+          <div class="links">
+            <h6>Brandbiz.id</h6>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Kerjasama</a></li>
+            <li><a href="#">Blog</a></li>
+          </div>
+          <div class="links">
+            <h6>Produk</h6>
+            <li><a href="#">E-Learning</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Mentoring</a></li>
+            <li><a href="#">Corporate Service</a></li>
+          </div>
+          <div class="links">
+            <h6>Lainnya</h6>
+            <li><a href="#">E-Learning</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Mentoring</a></li>
+            <li><a href="#">Corporate Service</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

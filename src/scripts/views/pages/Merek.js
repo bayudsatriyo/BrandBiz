@@ -25,6 +25,10 @@ const Merek = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const navigation = document.querySelectorAll('#navigationDrawerHome a');
+    navigation.forEach((nav) => {
+      nav.setAttribute('hidden', '');
+    });
   },
 };
 

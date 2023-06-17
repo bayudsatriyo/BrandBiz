@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway&display=swap');
+
+:root{
+      --primary-color: #5291BF;
+      --background-color: #DFF2FF;
+      --text-color: #484848;
+}
+
+.homecontainer{
+    font-family: 'Raleway', sans-serif;
+}
+
+.headline{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+
+}
+
+.headline-title{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.headline-title h1 {
+    width: 100%;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.title-span{
+    color: var(--primary-color);
+}
+
+.headline-title p {
+    margin-top: 10px;
+}
+
+.headline-image{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.headline-image img{
+    background-size: cover;
+    width: 100%;
+}
+
+.superior{
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+    display: flex;
+    padding: 20px;
+}
+
+.superior-list{
+    width: 100%;
+    display: block;
+}
+
+
+.superior-item img{
+    min-height: 44px;
+}
+
+.superior-content{ 
+    justify-content: center;
+    width: 160px;
+    margin: 10px auto;
+}
+
+.superior-content p{
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.about{
+    padding: 3%;
+    background-color: #5291bf;
+}
+
+.about-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: #5291bf;
+    border-radius: 5px;
+}
+
+.about-image img{
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.about-content{
+    width: 100%;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-title{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+}
+
+.about-title-second{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+}
+
+.about-description{
+    margin: 15px 0px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-align: justify;
+}
+
+#learnMore{
+    width: fit-content;
+    align-self: end;
+    font-size: 16px;
+    padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #f8f8f8;
+    border: 0;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.about-span{
+    color: var(--text-color);
+}
+
+.offering{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.offering-title{
+    margin: 20px;
+}
+
+.offering-title h3{
+    color: var(--text-color);
+}
+
+.offering-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.accordion{
+    order: 2;
+}
+
+.offering-image{
+    order: 1;
+    justify-content: center;
+}
+
+.offering-image img{
+    background-size: cover;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.testimony{
+    background-color: #dff2ff;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+.testimony-container{
+    width: 100%;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.testimony-title{
+    width: 100%;
+}
+
+.testimony-title .title{
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.testimony-sub-title{
+    color: var(--text-color);
+}
+
+.testimony-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimony-item{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    background-color: #fff;
+
+}
+
+.testimony-profile{
+    display: flex;
+    text-align: left;
+}
+
+
+.testimony-person{
+    margin-left: 10px;
+}
+
+.testimony-name{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.description{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.testimony-position{
+    text-transform: uppercase;
+}

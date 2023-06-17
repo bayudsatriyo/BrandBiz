@@ -43,6 +43,10 @@ const KuisPage = {
 
   async afterRender(indexkuis) {
     // Fungsi ini akan dipanggil setelah render()
+    const navigation = document.querySelectorAll('#navigationDrawerHome a');
+    navigation.forEach((nav) => {
+      nav.setAttribute('hidden', '');
+    });
     let kuisUser = JSON.parse(localStorage.getItem('user'));
     const soalContainer = document.getElementById('soal-container');
     const kuis = await KuisDB.get();

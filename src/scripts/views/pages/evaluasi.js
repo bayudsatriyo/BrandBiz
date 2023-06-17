@@ -34,6 +34,10 @@ const Evaluasi = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const navigation = document.querySelectorAll('#navigationDrawerHome a');
+    navigation.forEach((nav) => {
+      nav.setAttribute('hidden', '');
+    });
     const feedbackContainer = document.querySelector('#formFeedback');
     feedbackContainer.innerHTML += feedback();
     await setTimeout(() => {}, 1000);

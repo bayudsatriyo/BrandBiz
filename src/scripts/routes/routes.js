@@ -10,9 +10,11 @@ import KuisPage from '../views/kuis/kuis';
 import Evaluasi from '../views/pages/evaluasi';
 import Login from '../views/reg_log/login';
 import signIn from '../views/reg_log/signin';
+import Homepage from '../views/pages/home';
 
 const routes = {
-  '/': [Login, ''],
+  '/': [Homepage, ''],
+  '/login': [Login, ''],
   '/signin': [signIn, 'register'], // default page
   '/introduction': [Introduction, ''],
   '/pengenalan': [Pengenalan, ''],
