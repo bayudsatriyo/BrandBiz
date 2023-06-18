@@ -34,7 +34,13 @@ const Evaluasi = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
-    const navigation = document.querySelectorAll('#navigationDrawerHome li');
+    const TombolLogin = document.getElementById('signInHome');
+    TombolLogin.setAttribute('hidden', '');
+    const logo = document.querySelector('.nav-title img');
+    logo.setAttribute('hidden', '');
+    const backButton = document.getElementById('back');
+    backButton.removeAttribute('hidden');
+    const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
     navigation.forEach((nav) => {
       nav.setAttribute('hidden', '');
     });

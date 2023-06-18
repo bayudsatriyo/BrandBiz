@@ -50,7 +50,6 @@ const Login = {
       const formLogin = document.getElementById('form-login');
       const hamburger = document.getElementById('hamburgerButton');
       const signIn = document.getElementById('signin');
-      const home = document.getElementById('home');
       const TombolLogin = document.getElementById('signInHome');
       TombolLogin.setAttribute('hidden', '');
       hamburger.setAttribute('hidden', '');
@@ -70,12 +69,6 @@ const Login = {
         localStorage.setItem('user', 'register');
         location.assign("#/signin");
       });
-      home.addEventListener('click', (event) => {
-        event.preventDefault();
-        localStorage.setItem('user', 'home');
-        TombolLogin.removeAttribute('hidden');
-        location.assign("#/");
-      })
     },
   };
   

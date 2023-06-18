@@ -1,5 +1,5 @@
 import TestimonyDbSource from "../../data/testimonydb-source";
-import { createTestimonyItemTemplate } from "../templates/testimony_template";
+import { createTestimonyItemTemplate } from "../templates/creator_template";
 
 function getRandomTestimonies(testimonies) {
     const shuffledTestimonies = testimonies.sort(() => 0.5 - Math.random());
@@ -32,30 +32,18 @@ function getRandomTestimonies(testimonies) {
             <img src="./item/Super 1.png" alt="" />
             <div class="superior-content">
               <h4 class="superior-title">Belajar Secara Online</h4>
-              <p class="superior-description">
-                Belajar online melalui BrandBiz memberikan fleksibilitas akses
-                dan waktu.
-              </p>
             </div>
           </div>
           <div class="superior-item">
             <img src="./item/Super 1.png" alt="" />
             <div class="superior-content">
-              <h4 class="superior-title">Belajar Secara Online</h4>
-              <p class="superior-description">
-                Belajar online melalui BrandBiz memberikan fleksibilitas akses
-                dan waktu.
-              </p>
+              <h4 class="superior-title">User friendly</h4>
             </div>
           </div>
           <div class="superior-item">
             <img src="./item/Super 1.png" alt="" />
             <div class="superior-content">
-              <h4 class="superior-title">Belajar Secara Online</h4>
-              <p class="superior-description">
-                Belajar online melalui BrandBiz memberikan fleksibilitas akses
-                dan waktu.
-              </p>
+              <h4 class="superior-title">Konten yang berkualitas</h4>
             </div>
           </div>
         </div>

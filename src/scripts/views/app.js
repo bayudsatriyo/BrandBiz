@@ -33,6 +33,10 @@ class App {
       location.assign("#/");
       this._content.innerHTML = await page[0].render();
       await page[0].afterRender(); 
+    }else if(checksession == 'news'){
+      location.assign("#/news");
+      this._content.innerHTML = await page[0].render();
+      await page[0].afterRender();
     }else if(checksession == 'register'){
       location.assign("#/signin");
       this._content.innerHTML = await page[0].render();

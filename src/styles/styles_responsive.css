@@ -15,6 +15,12 @@
     #navHome{
       display: grid;
       grid-template-columns: 20% 80%;
+      border-bottom: 0.005mm solid #0095ff56;
+    }
+
+    .superior-list{
+      grid-template-columns: 30% 30% 30%;
+      gap: 10%;
     }
 
     #hamburgerButtonHome{
@@ -38,7 +44,7 @@
             margin-right: 1%;
       }
 
-      .nav-list li:hover{
+      .nav-list .listnav:hover{
         border-bottom: 1px solid #5291BF;
       }
       .footer-container{     
@@ -62,6 +68,11 @@
   @media screen and (min-width: 1000px) {
     #hamburgerButton{
       font-size: 20pt;
+    }
+    
+    .superior-list{
+      grid-template-columns: 30% 30% 30%;
+      gap: 10%;
     }
   }
    

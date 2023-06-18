@@ -19,8 +19,9 @@ class DBPost {
       const response = await fetch(CONFIG.feedbackUrl, options);
       const responseJson = await response.json();
       console.log(responseJson);
-    } catch (error) {
-      showResponseMessage(error);
+      showResponseMessage('Terima kasih sudah mengisi Feedback');
+    } catch (responseJson) {
+      showResponseMessage(responseJson.message);
     }
   }
 }

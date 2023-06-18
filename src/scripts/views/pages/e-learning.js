@@ -22,158 +22,61 @@ const ELearning = {
       </div>
     </section>
   
-    <section class="learning-discover">
+<section class="learning-discover">
       <h1>Discover</h1>
-      <div class="learning-discover-container-1">
+    <div class="learning-discover-container-1">
         <div class="discover-item">
           <div class="discover-modul">
+          <a href="#/introduction" id="modul"><h1>Belajar Dasar Branding Produk</h1></a>
             <div class="profile">
-              <div class="profile-image">
-                <img src="./discover 2.png" alt="" />
-              </div>
               <div class="profile-name">
-                <p class="name">Thomas Hope</p>
-                <p class="views">53K views • 2 weeks ago</p>
+                <a href="#/introduction" id="modul">Modul ini berisi mengenai pengertian dasar dasar melakukan Branding pada suatu Produk</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="discover-item">
+        <div class="discover-item2">
           <div class="discover-modul">
-            <div class="profile">
-              <div class="profile-image">
-                <img src="./discover 2.png" alt="" />
-              </div>
-              <div class="profile-name-2">
-                <p class="name">Thomas Hope</p>
-                <p class="views">53K views • 2 weeks ago</p>
-              </div>
+                <a href="#/learning"><h1>Belajar Dasar Strategi Pemasaran</h1></a>
+                    <div class="profile">
+                        <div class="profile-name">
+                            <p class="name">Coming Soon</p>
+                        </div>
+                    </div>
             </div>
-          </div>
         </div>
-      </div>
-      <h1>How to do Basic Jumping and how to landing safely</h1>
+    </div>
+      <h1 class="how">How to do Basic Jumping and how to landing safely</h1>
       <div class="learning-discover-container-2">
         <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
+          <img src="./istockphoto-1413766112-170667a.jpg" alt="Modul" />
           <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
             <h3 class="modul-title">
               Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
+            </h3>
+            <p>Coming Soon</p>
           </div>
         </div>
         <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
+          <img src="./jose-vazquez-Q5RBHz9cu1A-unsplash.jpg" alt="Modul" />
           <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
             <h3 class="modul-title">
               Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
-          </div>
-        </div>
-        <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
-          <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
-            <h3 class="modul-title">
-              Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
-          </div>
-        </div>
-        <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
-          <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
-            <h3 class="modul-title">
-              Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
-          </div>
-        </div>
-        <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
-          <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
-            <h3 class="modul-title">
-              Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
-          </div>
-        </div>
-        <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
-          <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
-            <h3 class="modul-title">
-              Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
-          </div>
-        </div>
-        <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
-          <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
-            <h3 class="modul-title">
-              Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
-          </div>
-        </div>
-        <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
-          <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
-            <h3 class="modul-title">
-              Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
-          </div>
-        </div>
-        <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
-          <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
-            <h3 class="modul-title">
-              Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
-          </div>
-        </div>
-        <div class="modul-item">
-          <img src="./image 5.png" alt="Modul" />
-          <div class="modul-description">
-            <img src="./image 10.png" alt="Avatar" class="image-avatar">
-            <p class="name">Gerry Geraldi <span>•</span></p>
-            <h3 class="modul-title">
-              Basic how to ride your skateboard comfortly
-            </h3>  
-            <p class="status">53K views  •  2 weeks ago</p>
+            </h3>
+            <p>Coming Soon</p>
           </div>
         </div>
       </div>
-    </section>        `;
+</section>        `;
     },
   
     async afterRender() {
       // Fungsi ini akan dipanggil setelah render()
-      const navigation = document.querySelectorAll('#navigationDrawerHome li');
+      const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
       const navdrawer = document.querySelector('#hamburgerButton');
       const TombolLogin = document.getElementById('signInHome');
-        TombolLogin.innerText = 'Logout';
+      const modul = document.getElementById('modul');
+      TombolLogin.innerText = 'Logout';
       navdrawer.setAttribute('hidden', '');
       navigation.forEach((nav) => {
         nav.setAttribute('hidden', '');
@@ -181,12 +84,21 @@ const ELearning = {
       TombolLogin.addEventListener('click', (event) => {
         event.preventDefault();
         TombolLogin.innerText = 'Masuk';
-        const navigation = document.querySelectorAll('#navigationDrawerHome li');
+        const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
         navigation.forEach((nav) => {
           nav.removeAttribute('hidden');
         });
         localStorage.setItem('user', 'login');
         location.assign("#/login");
+      })
+      modul.addEventListener('click', (event) => {
+        TombolLogin.setAttribute('hidden', '');
+        navdrawer.removeAttribute('hidden');
+        const logo = document.querySelector('.nav-title img');
+        logo.setAttribute('hidden', '');
+        const backButton = document.getElementById('back');
+        backButton.removeAttribute('hidden');
+        location.assign("#/introduction");
       })
 
     },

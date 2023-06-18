@@ -43,7 +43,7 @@ const KuisPage = {
 
   async afterRender(indexkuis) {
     // Fungsi ini akan dipanggil setelah render()
-    const navigation = document.querySelectorAll('#navigationDrawerHome a');
+    const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
     navigation.forEach((nav) => {
       nav.setAttribute('hidden', '');
     });
@@ -54,6 +54,10 @@ const KuisPage = {
     const judulKuis = kuis[indexkuis].judul;
     const judul = document.querySelector('.judul');
     const tableBody = document.querySelector('tbody');
+    const logo = document.querySelector('.nav-title img');
+    logo.setAttribute('hidden', '');
+    const backButton = document.getElementById('back');
+    backButton.removeAttribute('hidden');
     console.log(judulKuis);
     judul.innerHTML = judulKuis;
     soal.forEach((perSoal, index) => {

@@ -7,6 +7,7 @@ const CONFIG = {
   nilaiKuis: 'https://x8ki-letl-twmt.n7.xano.io/api:I8GnY3yd/users/',
   signin: 'https://x8ki-letl-twmt.n7.xano.io/api:I8GnY3yd/signin',
   TESTIMONY: 'https://x8ki-letl-twmt.n7.xano.io/api:I8GnY3yd/feedback',
+  NEWS: 'https://newsapi.org/v2/top-headlines?country=us&apiKey=9364e0be407c45b2aa2136ce65096575',
 };
 
 export default CONFIG;

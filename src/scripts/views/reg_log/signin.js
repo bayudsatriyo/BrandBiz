@@ -70,7 +70,6 @@ const signIn = {
       const noWaValue = document.getElementById('whatsapp');
       const jenisUsahaValue = document.getElementById('jenis_usaha');
       const showPass = document.getElementById('showPassword');
-      const home = document.getElementById('home');
       const TombolLogin = document.getElementById('signInHome');
       hamburger.setAttribute('hidden', '');
       TombolLogin.removeAttribute('hidden');
@@ -105,11 +104,6 @@ const signIn = {
         };
         generateSignin(user);
         formSignIn.reset();
-      })
-      home.addEventListener('click', (event) => {
-        event.preventDefault();
-        localStorage.removeItem('user');
-        location.assign("#/");
       })
     },
   };

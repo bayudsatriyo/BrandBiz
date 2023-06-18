@@ -28,6 +28,10 @@
     cursor: pointer;
   } 
 
+  #hamburgerButton span{
+    font-size: 15pt;
+  }
+
   /* .app-bar {
     padding: 8px 16px;
     background-color: #5291BF;
@@ -154,7 +158,7 @@
   }
 
   #mainContent{
-    background-color: #e8f6ff;
+    background-color: white;
   }
    
   .content {
@@ -573,12 +577,16 @@ footer{
    
 
 .nav-title img{
- height: 80px;
+ height: 65px;
  padding-left: 5%;
 }
 
 .nav-title span{
   color: var(--secondary-color) ;
+}
+
+#back{
+  text-decoration: none;
 }
 
 #hamburgerButtonHome{
@@ -603,10 +611,8 @@ footer{
 }
 
 .active{
-  transition: .5s ease-in;
-  background-color: rgb(255, 255, 255);
-  align-items: center;
   transform: translate(0,25%);
+  background-color: white;
 }
 
 .active li{
@@ -616,7 +622,7 @@ footer{
   padding: 10px 0px;
 }
 
-.active li:hover{
+.active .listnav:hover{
   color: #fff;
   border-bottom: 1px solid #4682B4;
 }
