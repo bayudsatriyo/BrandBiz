@@ -1,0 +1,18 @@
+{
+    "id": "brandbiz-lite",
+    "start_url": "./index.html",
+    "name": "BrandBiz Lite",
+    "short_name": "BrandBiz Lite",
+    "description": "Branding Your Businez",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#4682B4",
+    "icons": [
+      {
+        "src": "./public/favicon.png",
+        "sizes": "48x48",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ]
+  }

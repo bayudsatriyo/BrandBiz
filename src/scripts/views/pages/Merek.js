@@ -19,17 +19,22 @@ const Merek = {
       <br>
       <p>Nilai merek dapat membantu UMKM untuk membangun hubungan jangka panjang dengan pelanggan dan meningkatkan kepercayaan pelanggan pada merek dan produk Anda. Dalam waktu yang lama, nilai merek yang baik dapat meningkatkan nilai merek, konversi penjualan, dan meningkatkan reputasi UMKM yang bersangkutan.</p>
       </div>
-      <div class="feedback-form">
-      <h2>Feedback Form</h2>
-      <form id="formFeedback">
-      </form>
-      </div>
       </div>
         `;
   },
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const TombolLogin = document.getElementById('signInHome');
+    TombolLogin.setAttribute('hidden', '');
+    const logo = document.querySelector('.nav-title img');
+    logo.setAttribute('hidden', '');
+    const backButton = document.getElementById('back');
+    backButton.removeAttribute('hidden');
+    const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
+    navigation.forEach((nav) => {
+      nav.setAttribute('hidden', '');
+    });
   },
 };
 

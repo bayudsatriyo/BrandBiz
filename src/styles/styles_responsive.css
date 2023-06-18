@@ -1,16 +1,7 @@
-@media screen and (min-width: 650px) {
-    .app-bar .app-bar__brand h1 {
-      font-size: 1.5em;
-    }
-
+@media screen and (min-width: 720px) {
     #hamburgerButton{
       font-size: 15pt;
     } 
-   
-    .app-bar .app-bar__menu {
-      width: fit-content;
-    }
-    
    
     .app-bar__navigation ul li {
       display: inline-block;
@@ -20,44 +11,66 @@
       display: inline-block;
       text-align: center;
     }
-   
-  }
-   
-  @media screen and (min-width: 800px) {
-    .app-bar .app-bar__brand h1 {
-      font-size: 2em;
+
+    #navHome{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      border-bottom: 0.005mm solid #0095ff56;
+    }
+  
+
+    .superior-list{
+      grid-template-columns: 30% 30% 30%;
+      gap: 10%;
     }
 
-    #hamburgerButton{
-      font-size: 20pt;
-    } 
+    #hamburgerButtonHome{
+      display: none;
+    }    
+      .nav-list{
+            display: flex;
+            position: relative;
+            transform: none;
+            transition: none;
+            padding-top: 0;
+            width: 100%;
+            justify-content: end;
+      }
 
-  }
+      .nav-list li  {
+            padding: 0px 0px 2% 0px;
+            list-style: none;
+            text-align: center;
+            font-size: 14px;
+            margin-right: 1%;
+      }
+
+      .nav-list .listnav:hover{
+        border-bottom: 1px solid #5291BF;
+      }
+      .footer-container{     
+            margin: 0px auto;
+            width: 100%;
+            max-width: 1200px;
+      }
+
+      .footer-left-side{
+            width: 100%;
+            text-align: left;
+        }
+
+      .footer-right-side{
+            text-align: left;
+      }
    
+  }
 
+   
   @media screen and (min-width: 1000px) {
-
+    
+    .superior-list{
+      grid-template-columns: 30% 30% 30%;
+      gap: 10%;
+    }
   }
    
-   
-  /* @media screen and (min-height: 600px) {
-    .app-bar .app-bar__navigation{
-      height: 500px;
-    }
-  }
-
-  @media screen and (min-height: 1000px) {
-    .app-bar .app-bar__navigation{
-      height: 800px;
-    }
-  }
-
-  @media screen and (min-height: 1000px) {
-    .app-bar .app-bar__navigation{
-      height: 800px;
-    }
-  }
-  */
-
-  @media screen and (min-height: 1200px) {
-  } 
