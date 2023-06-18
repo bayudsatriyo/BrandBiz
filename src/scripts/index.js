@@ -4,6 +4,7 @@ import '../styles/styles_responsive.css';
 import '../styles/styles_home.css';
 import '../styles/learning.css';
 import '../styles/news.css';
+import swRegister from './utils/sw-register';
 
 import App from './views/app';
 
@@ -69,4 +70,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister()
 });

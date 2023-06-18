@@ -28,10 +28,6 @@
     cursor: pointer;
   } 
 
-  #hamburgerButton span{
-    font-size: 15pt;
-  }
-
   /* .app-bar {
     padding: 8px 16px;
     background-color: #5291BF;
