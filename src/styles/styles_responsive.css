@@ -67,9 +67,6 @@
 
    
   @media screen and (min-width: 1000px) {
-    #hamburgerButton{
-      font-size: 20pt;
-    }
     
     .superior-list{
       grid-template-columns: 30% 30% 30%;

@@ -54,6 +54,8 @@ const KuisPage = {
     const judulKuis = kuis[indexkuis].judul;
     const judul = document.querySelector('.judul');
     const tableBody = document.querySelector('tbody');
+    const TombolLogin = document.getElementById('signInHome');
+    TombolLogin.setAttribute('hidden', '');
     const logo = document.querySelector('.nav-title img');
     logo.setAttribute('hidden', '');
     const backButton = document.getElementById('back');
