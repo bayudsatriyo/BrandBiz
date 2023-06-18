@@ -2,6 +2,7 @@ import 'regenerator-runtime';
 import '../styles/styles_modul.css';
 import '../styles/styles_responsive.css';
 import '../styles/styles_home.css';
+import '../styles/learning.css';
 
 import App from './views/app';
 
@@ -22,10 +23,13 @@ logout.addEventListener('click', (event) => {
   localStorage.setItem('user', 'login');
   console.log(app)
   navdrawer.click();
-  const navigation = document.querySelectorAll('#navigationDrawerHome a');
+  const navigation = document.querySelectorAll('#navigationDrawerHome li');
   navigation.forEach((nav) => {
+    console.log(nav);
     nav.removeAttribute('hidden');
   });
+  const TombolLogin = document.getElementById('signInHome');
+  TombolLogin.setAttribute('hidden', '');
   location.assign("#/login");
 })
 

@@ -13,7 +13,8 @@
     }
 
     #navHome{
-      gap: 20%;
+      display: grid;
+      grid-template-columns: 20% 80%;
     }
 
     #hamburgerButtonHome{
@@ -25,6 +26,8 @@
             transform: none;
             transition: none;
             padding-top: 0;
+            width: 100%;
+            justify-content: end;
       }
 
       .nav-list li  {
@@ -55,26 +58,10 @@
    
   }
 
-  @media screen and (min-width: 860px) {
-    #navHome{
-      gap: 30%;
-    }
-  }
    
   @media screen and (min-width: 1000px) {
     #hamburgerButton{
       font-size: 20pt;
-    }
-
-    #navHome{
-      gap: 40%;
-    }
-  }
-   
-
-  @media screen and (min-width: 1200px) {
-    #navHome{
-      gap: 50%;
     }
   }
    

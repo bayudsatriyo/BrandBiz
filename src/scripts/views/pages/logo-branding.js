@@ -31,7 +31,7 @@ const LogoBranding = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
-    const navigation = document.querySelectorAll('#navigationDrawerHome a');
+    const navigation = document.querySelectorAll('#navigationDrawerHome li');
     navigation.forEach((nav) => {
       nav.setAttribute('hidden', '');
     });

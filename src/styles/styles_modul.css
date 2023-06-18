@@ -15,7 +15,7 @@
     AppBar
   */
   #hamburgerButton{
-    color: black;
+    color: #0077cc;
     right: 2%;
     position: absolute;
     font-size: 15pt;
@@ -24,7 +24,7 @@
   } 
 
   #hamburgerButton:hover{
-    color: #0066cc;
+    color: #0069b4;
     cursor: pointer;
   } 
 
@@ -63,7 +63,9 @@
     font-size: 20px;
     user-select: none;
   } */
-   
+  nav{
+    background-color: white;
+  }
   .app-bar__navigation {
     position: fixed;
     top: 70px;
@@ -107,6 +109,7 @@
     margin: 2% auto;
     width: 100%;
     text-align: center;
+    color: #313131;
   }
 
 
@@ -134,6 +137,7 @@
     min-height: 44px;
     padding-top: 2%;
     padding-bottom: 2%;
+    color: #003961;
   }
 
   .nav_title{
@@ -520,20 +524,6 @@ footer{
   height: 25px;
 }
 
-.footer-payment{
-  margin-top: 50px
-}
-
-.payment-method{
-  list-style: none;
-  display: flex;
-}
-
-.payment-method img {
-  height: 25px;
-  padding-right: 10px;
-}
-
 .footer-right-side{
   text-align: center;
 }
@@ -649,7 +639,12 @@ footer{
   padding: 5px 15px;
   outline: 1px solid #5291BF;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-right: 5%;
+  right: 5%;
+  font-weight: 400;
+  text-decoration: none;
+  font-weight: 600;
+  color: #5291BF;
 }
 
 #signInHome:hover{

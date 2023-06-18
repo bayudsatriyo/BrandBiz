@@ -6,8 +6,11 @@ async function generateLogin(user) {
     if(userLogin == null){
         alert('email atau password yang anda masukan salah');
     }else{
+    const TombolLogin = document.getElementById('signInHome');
+    TombolLogin.removeAttribute('hidden');
+    TombolLogin.innerText = 'Logout';
     localStorage.setItem("user", JSON.stringify(userLogin));
-    location.assign("#/introduction");
+    location.assign("#/learning");
     }
 };
 
@@ -59,10 +62,8 @@ const Login = {
             email: email.value,
             password: password.value
         };
-        hamburger.removeAttribute('hidden');
         console.log(user);
         generateLogin(user);
-        formLogin.reset();
       })
       signIn.addEventListener('click', (event) => {
         event.preventDefault();

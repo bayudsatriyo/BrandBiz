@@ -11,11 +11,13 @@ import Evaluasi from '../views/pages/evaluasi';
 import Login from '../views/reg_log/login';
 import signIn from '../views/reg_log/signin';
 import Homepage from '../views/pages/home';
+import ELearning from '../views/pages/e-learning';
 
 const routes = {
   '/': [Homepage, ''],
   '/login': [Login, ''],
-  '/signin': [signIn, 'register'], // default page
+  '/signin': [signIn, 'register'],
+  '/learning': [ELearning, ''],
   '/introduction': [Introduction, ''],
   '/pengenalan': [Pengenalan, ''],
   '/logo': [LogoBranding, ''],
