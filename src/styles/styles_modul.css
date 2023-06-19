@@ -533,9 +533,8 @@ footer{
 }
 
 .footer-right-side{
-  width: 50%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
 }
 
 .footer-left-side{
