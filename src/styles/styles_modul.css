@@ -72,7 +72,7 @@
   }
   .app-bar__navigation {
     position: fixed;
-    top: 70px;
+    top: 40px;
     right: -50%;
     width: 30%;
     transition: all 0.3s;
@@ -101,6 +101,7 @@
     flex-direction: column;
     width: 100%;
     padding-bottom: 20%;
+    padding: 0 2%;
     align-items: center;
   }
 
@@ -110,10 +111,11 @@
 
   .app-bar__navigation ul li{
     border-radius: 10px;
-    margin: 2% auto;
+    margin: 2% 0;
     width: 100%;
     text-align: center;
     color: #313131;
+    list-style: none;
   }
 
 
@@ -325,8 +327,9 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     overflow: hidden;
-    width: 55%;
-    margin: 50px auto;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px 0;
   }
   
   .login-header {
@@ -342,7 +345,7 @@
   }
   
   .login-main {
-    padding: 20px;
+    padding: 5%;
   }
   
   .form-group {
@@ -394,14 +397,16 @@
     width: 80%;
   }
 
+
   /* sign in */
   .signin-container {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     overflow: hidden;
-    width: 60%;
-    margin: 50px auto;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px 0;
   }
   
   .signin-header {
@@ -417,7 +422,7 @@
   }
   
   .signin-main {
-    padding: 20px;
+    padding: 5%;
   }
 
   .signin-main input[type="email"],
@@ -497,21 +502,19 @@ footer{
 }
 
 .footer-container{     
-  margin: 0px auto;
+  margin: 0px 0;
   width: 100%;
-  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 
 .footer-logo{
-  margin: 0px auto;
   width: 100%;
 }
 
 .footer-logo img{
-  height: 80px;
+  width: 50%;
 }
 
 .footer-sosmed{
@@ -530,19 +533,26 @@ footer{
 }
 
 .footer-right-side{
-  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left-side{
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-links{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: center;
-  align-items: center;
+  grid-template-rows: 50% 50%;
 }
 
 .links {
   list-style: none;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .links h6{
@@ -566,6 +576,7 @@ footer{
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  border-bottom: 0.005mm solid #0095ff56;
   padding: 10px;
   z-index: 98;
 }

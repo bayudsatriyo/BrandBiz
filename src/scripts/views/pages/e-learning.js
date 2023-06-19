@@ -76,6 +76,7 @@ const ELearning = {
       const TombolLogin = document.getElementById('signInHome');
       const modul = document.getElementById('modul');
       const getStarted = document.getElementById('getStarted');
+      const hamburgerHome = document.getElementById('hamburgerButtonHome');
       TombolLogin.innerText = 'Logout';
       navdrawer.setAttribute('hidden', '');
       navigation.forEach((nav) => {
@@ -94,6 +95,7 @@ const ELearning = {
       modul.addEventListener('click', (event) => {
         TombolLogin.setAttribute('hidden', '');
         navdrawer.removeAttribute('hidden');
+        hamburgerHome.setAttribute('hidden', '');
         const logo = document.querySelector('.nav-title img');
         logo.setAttribute('hidden', '');
         const backButton = document.getElementById('back');
@@ -103,6 +105,7 @@ const ELearning = {
       getStarted.addEventListener('click', (event) => {
         TombolLogin.setAttribute('hidden', '');
         navdrawer.removeAttribute('hidden');
+        hamburgerHome.setAttribute('hidden', '');
         const logo = document.querySelector('.nav-title img');
         logo.setAttribute('hidden', '');
         const backButton = document.getElementById('back');

@@ -55,6 +55,8 @@ const KuisPage = {
     const judul = document.querySelector('.judul');
     const tableBody = document.querySelector('tbody');
     const TombolLogin = document.getElementById('signInHome');
+    const hamburgerHome = document.getElementById('hamburgerButtonHome');
+    hamburgerHome.setAttribute('hidden', '');
     TombolLogin.setAttribute('hidden', '');
     const logo = document.querySelector('.nav-title img');
     logo.setAttribute('hidden', '');

@@ -31,6 +31,8 @@ const LogoBranding = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const hamburgerHome = document.getElementById('hamburgerButtonHome');
+    hamburgerHome.setAttribute('hidden', '');
     const TombolLogin = document.getElementById('signInHome');
     TombolLogin.setAttribute('hidden', '');
     const logo = document.querySelector('.nav-title img');
