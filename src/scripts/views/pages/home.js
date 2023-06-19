@@ -3,7 +3,7 @@ import { createTestimonyItemTemplate } from "../templates/creator_template";
 
 function getRandomTestimonies(testimonies) {
     const shuffledTestimonies = testimonies.sort(() => 0.5 - Math.random());
-    return shuffledTestimonies.slice(0, 3);
+    return shuffledTestimonies.slice(0, 4);
   }
   
   const Homepage = {
@@ -94,7 +94,8 @@ function getRandomTestimonies(testimonies) {
               pengguna dan ratusan mitra dalam mengembangkan skill
             </p>
           </div>
-          <div id="testimonyList" class="testimony-list"></div>
+          <div id="testimonyList" class="testimony-list">
+          </div>
         </div>
       </section>
       </div>

@@ -58,6 +58,8 @@ home.addEventListener('click', (event) => {
 logout.addEventListener('click', (event) => {
   event.preventDefault();
   const navdrawer = document.querySelector('#hamburgerButton');
+  const hamburgerHome = document.getElementById('hamburgerButtonHome');
+  hamburgerHome.removeAttribute('hidden');
   localStorage.setItem('user', 'login');
   console.log(app)
   navdrawer.click();

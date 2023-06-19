@@ -56,7 +56,7 @@ section{
 .superior{
     justify-content: center;
     text-align: center;
-    padding: 15% 0;
+    padding: 25% 0;
 }
 
 .superior-list{
@@ -78,23 +78,22 @@ section{
 }
 
 .about{
-    padding: 3%;
     background-color: #5291bf;
+    width: 100%;
 }
 
 .about-container{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(30%, 1fr));
     background-color: #5291bf;
     border-radius: 5px;
 }
 
 .about-image img{
-    object-fit: cover;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    padding: 5%;
     border-radius: 5px;
 }
 
@@ -130,7 +129,6 @@ section{
 
 #learnMore{
     width: fit-content;
-    align-self: end;
     font-size: 16px;
     padding: 15px 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -188,7 +186,9 @@ section{
 
 .testimony-container{
     width: 100%;
+    height: fit-content;
     text-align: center;
+    margin-bottom: 5%;
     /* justify-content: center; */
 }
 
@@ -208,16 +208,16 @@ section{
 .testimony-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    width: 100%;
+    justify-content: center;
 }
 
 .testimony-item{
-    margin: 0 auto;
     align-items: center;
-    margin-top: 20px;
+    margin: 5% 20%;
     border-radius: 5px;
-    padding: 15px;
-    width: 300px;
+    padding: 5%;
+    width: 60%;
     background-color: #fff;
 
 }
