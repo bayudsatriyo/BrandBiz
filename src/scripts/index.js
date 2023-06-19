@@ -4,6 +4,7 @@ import '../styles/styles_responsive.css';
 import '../styles/styles_home.css';
 import '../styles/learning.css';
 import '../styles/news.css';
+import '../styles/about.css';
 import swRegister from './utils/sw-register';
 
 import App from './views/app';
@@ -24,6 +25,14 @@ const home = document.getElementById('home');
 const backButton = document.getElementById('back');
 const logo = document.querySelector('.nav-title img');
 const news = document.getElementById('news');
+const about = document.getElementById('about');
+
+about.addEventListener('click', (event) => {
+  event.preventDefault();
+  localStorage.setItem('user', 'about');
+  TombolLogin.removeAttribute('hidden');
+  location.assign("#/about");
+})
 
 news.addEventListener('click', (event) => {
   event.preventDefault();

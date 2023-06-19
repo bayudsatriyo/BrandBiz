@@ -12,6 +12,7 @@ import signIn from '../views/reg_log/signin';
 import Homepage from '../views/pages/home';
 import ELearning from '../views/pages/e-learning';
 import News from '../views/pages/news-page';
+import About from '../views/pages/about';
 
 const routes = {
   '/': [Homepage, ''],
@@ -19,6 +20,7 @@ const routes = {
   '/signin': [signIn, 'register'],
   '/learning': [ELearning, ''],
   '/news': [News, ''],
+  '/about': [About, ''],
   '/introduction': [Introduction, ''],
   '/pengenalan': [Pengenalan, ''],
   '/logo': [LogoBranding, ''],

@@ -18,6 +18,7 @@ const News = {
     login.addEventListener('click', (event) => {
         event.preventDefault();
         localStorage.setItem('user', 'login');
+        login.setAttribute('hidden', '');
         location.assign("#/login");
       });
     const headline = await NewsDbSource.news();

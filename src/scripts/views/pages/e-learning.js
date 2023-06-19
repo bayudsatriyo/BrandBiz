@@ -12,8 +12,7 @@ const ELearning = {
             </p>
           </div>
           <form>
-            <button id="getStarted">Get Started</button>
-            <button id="learnMore">Learn More</button>
+            <a href="#/introduction" id="getStarted">Get Started</a>
           </form>
         </div>
         <div class="learning-hero-image">
@@ -76,6 +75,7 @@ const ELearning = {
       const navdrawer = document.querySelector('#hamburgerButton');
       const TombolLogin = document.getElementById('signInHome');
       const modul = document.getElementById('modul');
+      const getStarted = document.getElementById('getStarted');
       TombolLogin.innerText = 'Logout';
       navdrawer.setAttribute('hidden', '');
       navigation.forEach((nav) => {
@@ -99,7 +99,17 @@ const ELearning = {
         const backButton = document.getElementById('back');
         backButton.removeAttribute('hidden');
         location.assign("#/introduction");
+      });
+      getStarted.addEventListener('click', (event) => {
+        TombolLogin.setAttribute('hidden', '');
+        navdrawer.removeAttribute('hidden');
+        const logo = document.querySelector('.nav-title img');
+        logo.setAttribute('hidden', '');
+        const backButton = document.getElementById('back');
+        backButton.removeAttribute('hidden');
+        location.assign("#/introduction");
       })
+
 
     },
   };

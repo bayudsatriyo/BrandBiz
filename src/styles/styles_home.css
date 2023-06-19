@@ -66,11 +66,6 @@ section{
     gap: 10%;
 }
 
-
-.superior-item img{
-    min-height: 44px;
-}
-
 .superior-content{ 
     justify-content: center;
     width: 160px;

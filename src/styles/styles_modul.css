@@ -493,6 +493,7 @@ footer{
   justify-content: center;
   padding: 30px;
   bottom: 0;
+  border-top: 0.05mm solid #5292bfa6;
 }
 
 .footer-container{     
