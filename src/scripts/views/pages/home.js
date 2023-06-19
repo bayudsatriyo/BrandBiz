@@ -29,19 +29,19 @@ function getRandomTestimonies(testimonies) {
       <section class="superior">
         <div class="superior-list">
           <div class="superior-item">
-            <img src="./item/Super 1.png" alt="" />
+          <img width="70" height="70" src="https://img.icons8.com/ultraviolet/40/multiple-devices.png" alt="multiple-devices"/>
             <div class="superior-content">
               <h4 class="superior-title">Belajar Secara Online</h4>
             </div>
           </div>
           <div class="superior-item">
-            <img src="./item/Super 1.png" alt="" />
+          <img width="70" height="70" src="https://img.icons8.com/ultraviolet/40/two-smartphones.png" alt="two-smartphones"/>
             <div class="superior-content">
-              <h4 class="superior-title">User friendly</h4>
+              <h4 class="superior-title">Mobile friendly</h4>
             </div>
           </div>
           <div class="superior-item">
-            <img src="./item/Super 1.png" alt="" />
+          <img width="70" height="70" src="https://img.icons8.com/ultraviolet/40/literature--v1.png" alt="literature--v1"/>
             <div class="superior-content">
               <h4 class="superior-title">Konten yang berkualitas</h4>
             </div>

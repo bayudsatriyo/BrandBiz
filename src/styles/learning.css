@@ -57,17 +57,20 @@
     margin-right: 10px;
 }
 
-#getStarted {
+#getStarted{
     background-color: var(--primary-color);
     color: #fff;
-    border: none;
+    padding: 2%;
+    border-radius: 5%;
     transition: .1s ease-in;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #getStarted:hover{
-    background-color: #0c171f;
-    border: 1px solid #0c171f;
+    background-color: #fff;
+    color: #4682B4;
+    border: 1px solid #4682B4;
 }
 
 #learnMore{
@@ -124,6 +127,10 @@
 }
 
 .discover-item2 h1, .discover-item2 p{
+    color: white;
+}
+
+.discover-item h1:hover, .discover-item a:hover{
     color: white;
 }
 
