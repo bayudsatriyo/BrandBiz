@@ -8,19 +8,19 @@ const About = {
     <h2>Our Team</h2>
     <div class="tim-container">
         <div class="tim blue">
-            <img src="./tim1.jpeg" alt="Gerry Geraldi">
+            <img src="https://i.postimg.cc/RVKBMJhR/tim1.jpg" alt="Gerry Geraldi">
             <h2>Gerry Geraldi</h2>
             <h3>Head Team Project</h3>
             <p>UNDIKNAS University</p>
         </div>
         <div class="tim blue">
-            <img src="./tim2.jpeg" alt="Bayu Dwi Satrio">
-            <h2>Bayu Dwi Satrio</h2>
+            <img src="https://i.postimg.cc/G2GQBRyZ/tim2.jpg" alt="Bayu Dwi Satrio">
+            <h2>Bayu Dwi Satriyo</h2>
             <h3>Front End & Back End Developer</h3>
             <p>Universitas Sahid Surakarta</p>
         </div>
         <div class="tim blue">
-            <img src="./tim3.jpeg" alt="Heri Irawan">
+            <img src="https://i.postimg.cc/tTQdGcMD/tim3.jpg" alt="Heri Irawan">
             <h2>Heri Irawan</h2>
             <h3>Front-end Developer</h3>
             <p>Universitas Teknologi Mataram</p>

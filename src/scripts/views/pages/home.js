@@ -23,7 +23,7 @@ function getRandomTestimonies(testimonies) {
           </p>
         </div>
         <div class="headline-image">
-          <img src="./6685-removebg-preview.png" alt="" />
+          <img src="https://i.postimg.cc/htQHZb01/6685-removebg-preview.png" alt="" />
         </div>
       </section>
       <section class="superior">
@@ -51,7 +51,7 @@ function getRandomTestimonies(testimonies) {
       <section class="about">
         <div class="about-container">
           <div class="about-image">
-            <img src="./jose-vazquez-Q5RBHz9cu1A-unsplash.jpg" alt="" />
+            <img src="https://i.postimg.cc/R0RGgN2T/jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="" />
           </div>
           <div class="about-content">
             <h2 class="about-title">About</h2>
@@ -78,7 +78,7 @@ function getRandomTestimonies(testimonies) {
           </p>
         </div>
           <div class="offering-image">
-            <img src="./5031659-removebg-preview.png" alt="" />
+            <img src="https://i.postimg.cc/bwvQq351/5031659-removebg-preview.png" alt="" />
           </div>
         </div>
       </section>
