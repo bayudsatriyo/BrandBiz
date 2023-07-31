@@ -4,7 +4,7 @@ const Kontent = {
         <div class="container">
         <h1 class="judul">Konten Branding</h1>
         <br>
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/a9cPeBW0o98" title="CINEMATIC VIDEO RE-BRANDING PRODUK KEMASAN UMKM BUCANDRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="vidmateri" src="https://www.youtube.com/embed/a9cPeBW0o98" title="CINEMATIC VIDEO RE-BRANDING PRODUK KEMASAN UMKM BUCANDRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="deskripsi">
         <p>Video diatas merupakan salah satu contoh visualisasi kontent branding produk dalam bentuk video</p>
         <p>Konten branding mencakup aspek non-visual seperti pesan merek dan storytelling merek. Pesan merek harus mencakup informasi 
@@ -42,6 +42,10 @@ const Kontent = {
         </p>
         <p>Dalam membuat konten, perlu dipertimbangkan bahwa merek dan produk yang mempunyai konten yang baik dan terorganisir dapat menjadi lebih menarik dan mampu bersaing di pasar.</p>
         </div>
+        </div>
+        <div class="transition_page">
+        <a href="#/logo">Sebelumnya</a>
+        <a href="#/strategi">Selanjutnya</a>
         </div>
           `;
   },

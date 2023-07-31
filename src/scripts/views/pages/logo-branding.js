@@ -26,6 +26,10 @@ const LogoBranding = {
       <p>Visual branding yang baik dapat membantu produk UMKM untuk menarik minat pelanggan dan membedakan produk mereka dari pesaing. Konsumen cenderung lebih tertarik pada produk yang memiliki identitas merek yang kuat dan terlihat profesional. Dengan melalui visual branding yang baik, UMKM dapat memperkuat mereknya dan membangun kesetiaan pelanggan yang lebih baik.</p>
       </div>
       </div>
+      <div class="transition_page">
+      <a href="#/merek">Sebelumnya</a>
+      <a href="#/kontent">Selanjutnya</a>
+      </div>
         `;
   },
 

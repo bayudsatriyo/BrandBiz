@@ -1,6 +1,6 @@
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 650px) {
     #hamburgerButton{
-      font-size: 15pt;
+      font-size: 44px;
     } 
    
     .app-bar__navigation ul li {
@@ -26,7 +26,11 @@
 
     #hamburgerButtonHome{
       display: none;
-    }    
+    }
+
+    .vidmateri{
+      height: 400px;
+    }
       .nav-list{
             display: flex;
             position: relative;
@@ -67,6 +71,11 @@
         grid-template-columns: 50% 50%;
         gap: 50%;
       }
+
+      .transition_page{
+        padding-left: 5%;
+        gap: 75%;
+      }
    
   }
 
@@ -76,6 +85,14 @@
     .superior-list{
       grid-template-columns: 30% 30% 30%;
       gap: 10%;
+    }
+
+    .transition_page{
+      gap: 85%;
+    }
+
+    .vidmateri{
+      height: 500px;
     }
   }
    

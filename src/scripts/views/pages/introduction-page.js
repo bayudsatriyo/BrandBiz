@@ -14,6 +14,10 @@ const Introduction = {
     membangun kepercayaan pelanggan, dan memperluas pangsa pasar. Hal ini dapat membantu UMKM tumbuh dan berkembang dalam jangka panjang.</p>
     </div>
     </div>
+    <div class="transition_page">
+    <a href=""></a>
+    <a href="#/pengenalan">Selanjutnya</a>
+    </div>
       `;
   },
 

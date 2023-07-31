@@ -35,6 +35,10 @@ const Strategi = {
         <br>
         </div>
         </div>
+        <div class="transition_page">
+        <a href="#/kontent">Sebelumnya</a>
+        <a href="#/evaluasi">Selanjutnya</a>
+        </div>
           `;
   },
 

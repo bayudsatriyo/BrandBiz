@@ -29,6 +29,10 @@ const Evaluasi = {
         </form>
         </div>
         </div>
+        <div class="transition_page">
+        <a href="#/strategi">Sebelumnya</a>
+        <a href="#/kuispengenalan">Selanjutnya</a>
+        </div>
           `;
   },
 

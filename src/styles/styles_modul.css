@@ -18,7 +18,10 @@
     color: #0077cc;
     right: 2%;
     position: absolute;
-    font-size: 15pt;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 20px;
+    font-weight: 400;
     background-color: transparent;
     border: none;
   } 
@@ -207,6 +210,17 @@
 
   .judul{
     text-align: center;
+  }
+
+  .vidmateri{
+    width: 85%;
+    height: 200px;
+  }
+
+  .transition_page button{
+    background-color: transparent;
+    border: none;
+    color: #0066cc;
   }
 
   /* formulir feedback */
@@ -487,6 +501,18 @@
     gap: 5%;
   }
 
+  .transition_page{
+    display: flex;
+    flex-direction: row;
+    gap: 55%;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .transition_page a{
+    text-decoration: none;
+  }
+
    
    
   /*
@@ -533,7 +559,7 @@ footer{
 }
 
 .footer-right-side{
-  width: 100%;
+  width: fit-content;
   display: flex;
 }
 
