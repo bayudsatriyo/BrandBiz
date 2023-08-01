@@ -1,5 +1,7 @@
 import TestimonyDbSource from "../../data/testimonydb-source";
 import { createTestimonyItemTemplate } from "../templates/creator_template";
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 function getRandomTestimonies(testimonies) {
     const shuffledTestimonies = testimonies.sort(() => 0.5 - Math.random());
@@ -23,25 +25,25 @@ function getRandomTestimonies(testimonies) {
           </p>
         </div>
         <div class="headline-image">
-          <img src="https://i.postimg.cc/htQHZb01/6685-removebg-preview.png" alt="" />
+          <img class="lazyload" data-src="https://i.postimg.cc/htQHZb01/6685-removebg-preview.png" alt="" />
         </div>
       </section>
       <section class="superior">
         <div class="superior-list">
           <div class="superior-item">
-          <img width="70" height="70" src="https://img.icons8.com/ultraviolet/40/multiple-devices.png" alt="multiple-devices"/>
+          <img class="lazyload" data-src="https://img.icons8.com/ultraviolet/40/multiple-devices.png" width="70" height="70" alt="multiple-devices"/>
             <div class="superior-content">
               <h4 class="superior-title">Belajar Secara Online</h4>
             </div>
           </div>
           <div class="superior-item">
-          <img width="70" height="70" src="https://img.icons8.com/ultraviolet/40/two-smartphones.png" alt="two-smartphones"/>
+          <img class="lazyload" data-src="https://img.icons8.com/ultraviolet/40/two-smartphones.png" width="70" height="70" alt="two-smartphones"/>
             <div class="superior-content">
               <h4 class="superior-title">Mobile friendly</h4>
             </div>
           </div>
           <div class="superior-item">
-          <img width="70" height="70" src="https://img.icons8.com/ultraviolet/40/literature--v1.png" alt="literature--v1"/>
+          <img class="lazyload" data-src="https://img.icons8.com/ultraviolet/40/literature--v1.png" width="70" height="70" alt="literature--v1"/>
             <div class="superior-content">
               <h4 class="superior-title">Konten yang berkualitas</h4>
             </div>
@@ -51,7 +53,7 @@ function getRandomTestimonies(testimonies) {
       <section class="about">
         <div class="about-container">
           <div class="about-image">
-            <img src="https://i.postimg.cc/R0RGgN2T/jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="" />
+            <img class="lazyload" data-src="https://i.postimg.cc/R0RGgN2T/jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="" />
           </div>
           <div class="about-content">
             <h2 class="about-title">About</h2>
@@ -65,8 +67,8 @@ function getRandomTestimonies(testimonies) {
               pengguna mengembangkan keterampilan bisnis mereka, memperluas
               wawasan, dan mengoptimalkan potensi pertumbuhan bisnis.
             </p>
-            <a href="#/login" id="learnMore" >Learn More</a>
           </div>
+          <a href="#/login" id="learnMore" >Learn More</a>
         </div>
       </section>
       <section class="offering">
@@ -78,7 +80,7 @@ function getRandomTestimonies(testimonies) {
           </p>
         </div>
           <div class="offering-image">
-            <img src="https://i.postimg.cc/bwvQq351/5031659-removebg-preview.png" alt="" />
+            <img class="lazyload" data-src="https://i.postimg.cc/bwvQq351/5031659-removebg-preview.png" alt="" />
           </div>
         </div>
       </section>
