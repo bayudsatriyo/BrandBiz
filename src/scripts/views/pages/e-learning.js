@@ -1,3 +1,6 @@
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 const ELearning = {
     async render() {
       return `
@@ -11,12 +14,10 @@ const ELearning = {
               resources.
             </p>
           </div>
-          <form>
             <a href="#/introduction" id="getStarted">Get Started</a>
-          </form>
         </div>
         <div class="learning-hero-image">
-          <img src="https://i.postimg.cc/SxBCc8dP/Banner-Image.png" alt="Banner Hero" />
+          <img class="lazyload" data-src="https://i.postimg.cc/SxBCc8dP/Banner-Image.png" alt="Banner Hero" />
         </div>
       </div>
     </section>
@@ -48,7 +49,7 @@ const ELearning = {
       <h1 class="how">How to do Basic Jumping and how to landing safely</h1>
       <div class="learning-discover-container-2">
         <div class="modul-item">
-          <img src="https://i.postimg.cc/tg05z8Dp/istockphoto-1413766112-170667a.jpg" alt="Modul" />
+          <img class="lazyload" data-src="https://i.postimg.cc/tg05z8Dp/istockphoto-1413766112-170667a.jpg" alt="Modul" />
           <div class="modul-description">
             <h3 class="modul-title">
               Basic how to ride your skateboard comfortly
@@ -57,7 +58,7 @@ const ELearning = {
           </div>
         </div>
         <div class="modul-item">
-          <img src="https://i.postimg.cc/R0RGgN2T/jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="Modul" />
+          <img class="lazyload" data-src="https://i.postimg.cc/R0RGgN2T/jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="Modul" />
           <div class="modul-description">
             <h3 class="modul-title">
               Basic how to ride your skateboard comfortly

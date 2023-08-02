@@ -71,11 +71,6 @@
         grid-template-columns: 50% 50%;
         gap: 50%;
       }
-
-      .transition_page{
-        padding-left: 5%;
-        gap: 75%;
-      }
    
   }
 
@@ -87,12 +82,9 @@
       gap: 10%;
     }
 
-    .transition_page{
-      gap: 85%;
-    }
-
     .vidmateri{
-      height: 500px;
+      width: 70%;
+      height: 600px;
     }
   }
    

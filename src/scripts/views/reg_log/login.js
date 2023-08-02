@@ -29,7 +29,7 @@ const Login = {
                   <input type="email" id="email" name="email" required>
               </div>
               <div class="form-group">
-                  <label for="password">Password:</label>
+                  <label for="password">Kata Sandi:</label>
                   <input type="password" id="password" name="password" required>
               </div>
               <div class="form-group">

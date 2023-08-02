@@ -28,7 +28,6 @@ const KuisPage = {
   <thead>
     <tr>
       <th>Tanggal</th>
-      <th>Nama Kuis</th>
       <th>Nilai Kuis</th>
       <th>Presentase</th>
       <th>Status</th>

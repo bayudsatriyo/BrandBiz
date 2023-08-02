@@ -51,12 +51,17 @@ section{
 .headline-image img{
     background-size: cover;
     width: 100%;
+    height: auto;
 }
 
 .superior{
     justify-content: center;
     text-align: center;
-    padding: 25% 0;
+    padding: 15% 0;
+}
+
+.superior-title{
+    font-family: 'Raleway', sans-serif;
 }
 
 .superior-list{
@@ -81,17 +86,19 @@ section{
     background-color: #5291bf;
     width: 100%;
     max-height: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-container{
-    width: 100%;
+    width: 90%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     background-color: #5291bf;
     border-radius: 1rem;
     align-items: center;
-    padding: 2rem;
+    padding: 3%;
 }
 
 .about-image img{
@@ -162,6 +169,7 @@ section{
 
 .offering-title h3{
     color: var(--text-color);
+    padding: 1rem 0;
 }
 
 .offering-content{
@@ -201,15 +209,18 @@ section{
 
 .testimony-title{
     width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .testimony-title .title{
     font-weight: 700;
     color: var(--text-color);
+    padding-bottom: 0.5rem;
 }
 
 .testimony-sub-title{
     color: var(--text-color);
+    padding-bottom: 0.5rem;
 }
 
 .testimony-list{
@@ -226,22 +237,19 @@ section{
     padding: 5%;
     width: 60%;
     background-color: #fff;
+    font-family: 'Raleway', sans-serif;
 
 }
 
 .testimony-profile{
     display: flex;
     text-align: left;
-}
-
-
-.testimony-person{
-    margin-left: 10px;
+ 
 }
 
 .testimony-name{
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .description{

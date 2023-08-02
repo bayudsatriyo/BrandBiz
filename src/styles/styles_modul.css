@@ -20,10 +20,10 @@
     position: absolute;
     min-width: 44px;
     min-height: 44px;
-    font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     background-color: transparent;
     border: none;
+
   } 
 
   #hamburgerButton:hover{
@@ -32,7 +32,7 @@
   } 
 
   #hamburgerButton span{
-    font-size: 15pt;
+    font-size: 16pt;
   }
 
   /* .app-bar {
@@ -204,8 +204,8 @@
   }
 
   .deskripsi img{
-    width: 50%;
-    margin: 2% 25%;
+    width: 90%;
+    padding: 0 1rem;
   }
 
   .judul{
@@ -213,7 +213,7 @@
   }
 
   .vidmateri{
-    width: 85%;
+    width: 100%;
     height: 200px;
   }
 
@@ -314,7 +314,7 @@
 
   /* table kuis */
   #penilaian {
-    width: 60%;
+    width: 50%;
     border-collapse: collapse;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -402,13 +402,19 @@
   .btn-logout {
     background-color: #5291BF;
     color: white;
-    padding: 15px 20px;
+    padding: 0.5rem 0.5rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     cursor: pointer;
     font-size: 18px;
     margin-top: 5%;
-    width: 80%;
+    width: 70%;
+  }
+
+  .btn-logout:hover{
+    background-color: white;
+    color: #5291BF;
+    border: 1px solid #5291BF;
   }
 
 
@@ -504,7 +510,7 @@
   .transition_page{
     display: flex;
     flex-direction: row;
-    gap: 55%;
+    justify-content: space-between;
     width: 100%;
     margin-top: 5%;
   }
@@ -537,6 +543,7 @@ footer{
 
 .footer-logo{
   width: 100%;
+  height: auto;
 }
 
 .footer-logo img{
@@ -599,10 +606,10 @@ footer{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  text-align: center;
   align-items: center;
+  text-align: start;
   border-bottom: 0.005mm solid #0095ff56;
-  padding: 10px;
+  padding: 5px 0px;
   z-index: 98;
 }
 
@@ -616,6 +623,7 @@ footer{
 .nav-title img{
  height: 65px;
  padding-left: 5%;
+ width: auto;
 }
 
 .nav-title span{
@@ -624,6 +632,7 @@ footer{
 
 #back{
   text-decoration: none;
+  padding-left: 2rem;
 }
 
 #hamburgerButtonHome{
@@ -634,6 +643,7 @@ footer{
   border: none;
   border-radius: 2px;
   background-color: #DFF2FF;
+  margin-right: 1rem;
 }
 
 .nav-list{
@@ -650,6 +660,7 @@ footer{
 .active{
   transform: translate(0,25%);
   background-color: white;
+  text-align: center;
 }
 
 .active li{
