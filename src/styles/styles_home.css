@@ -51,12 +51,17 @@ section{
 .headline-image img{
     background-size: cover;
     width: 100%;
+    height: auto;
 }
 
 .superior{
     justify-content: center;
     text-align: center;
-    padding: 25% 0;
+    padding: 15% 0;
+}
+
+.superior-title{
+    font-family: 'Raleway', sans-serif;
 }
 
 .superior-list{
@@ -80,29 +85,34 @@ section{
 .about{
     background-color: #5291bf;
     width: 100%;
+    max-height: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-container{
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(30%, 1fr));
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
     background-color: #5291bf;
-    border-radius: 5px;
+    border-radius: 1rem;
+    align-items: center;
+    padding: 3%;
 }
 
 .about-image img{
     background-size: cover;
     width: 100%;
-    padding: 5%;
     border-radius: 5px;
 }
 
 .about-content{
     width: 100%;
-    padding: 2.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .about-title{
@@ -110,6 +120,9 @@ section{
     text-transform: uppercase;
     font-family: 'Archivo Black', sans-serif;
     color: #fff;
+    padding: 3rem 0;
+    border-bottom: 1px solid white;
+    width: 75%;
 }
 
 .about-title-second{
@@ -117,10 +130,11 @@ section{
     text-transform: uppercase;
     font-family: 'Archivo Black', sans-serif;
     color: #fff;
+    overflow-wrap: anywhere;
 }
 
 .about-description{
-    margin: 15px 0px;
+    margin: 0 0px;
     font-size: 16px;
     color: #fff;
     font-weight: 400;
@@ -155,6 +169,7 @@ section{
 
 .offering-title h3{
     color: var(--text-color);
+    padding: 1rem 0;
 }
 
 .offering-content{
@@ -189,20 +204,23 @@ section{
     height: fit-content;
     text-align: center;
     margin-bottom: 5%;
-    /* justify-content: center; */
+    border-radius: 1rem;
 }
 
 .testimony-title{
     width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .testimony-title .title{
     font-weight: 700;
     color: var(--text-color);
+    padding-bottom: 0.5rem;
 }
 
 .testimony-sub-title{
     color: var(--text-color);
+    padding-bottom: 0.5rem;
 }
 
 .testimony-list{
@@ -219,22 +237,19 @@ section{
     padding: 5%;
     width: 60%;
     background-color: #fff;
+    font-family: 'Raleway', sans-serif;
 
 }
 
 .testimony-profile{
     display: flex;
     text-align: left;
-}
-
-
-.testimony-person{
-    margin-left: 10px;
+ 
 }
 
 .testimony-name{
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .description{

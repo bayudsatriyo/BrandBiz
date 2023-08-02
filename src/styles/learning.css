@@ -5,8 +5,11 @@
 }
 
 .learning-hero-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax( 250px, 1fr));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
 }
 
 .learning-hero-content{
@@ -14,6 +17,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
     order: 2;
 }
 
@@ -37,7 +43,6 @@
 
 .learning-hero-image{
     text-align: center;
-    order: 1;
     margin-bottom: 50px;
 }
 
@@ -47,24 +52,17 @@
     height: 100%;
 }
 
-.learning-hero-content form {
-    margin-top: 10px;
-}
-
-.learning-hero-content form button {
-    padding: 15px 30px;
-    font-size: 14px;
-    margin-right: 10px;
-}
-
 #getStarted{
     background-color: var(--primary-color);
     color: #fff;
-    padding: 2%;
+    padding: 3%;
     border-radius: 5%;
     transition: .1s ease-in;
     cursor: pointer;
     text-decoration: none;
+    font-size: 15pt;
+    width: 45%;
+    text-align: center;
 }
 
 #getStarted:hover{
@@ -87,10 +85,10 @@
 
 /* Discover Session */
 .learning-discover{
-    margin-top: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .learning-discover h1 {
@@ -103,10 +101,10 @@
 .learning-discover-container-1{
     margin: 5% auto;
     height: 10%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    width: 100%;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 1rem;
     margin-bottom: 10%;
 }
 
@@ -178,28 +176,31 @@
     margin: 2% auto;
     padding: 5% 0;
     height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .modul-item{
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .modul-item img{
-    border-radius: 5% 5% 0% 0%;
     object-fit: cover;
     width: 100%;
     height: 200px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .modul-description{
     background-color: var(--primary-color);
     width: 100%;
-    padding: 20px;
-    border-radius: 0% 0% 5% 5%;
-
+    padding: 20px 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .modul-item .image-avatar{
@@ -207,7 +208,6 @@
     width: 50px;
     right: 2%;
     top:  45%;
-    border-radius: 50%;
 }
 
 .modul-description{
@@ -225,8 +225,17 @@
 }
 
 .modul-description h3{
-    margin-top: 15px;
     color: #fff;
+    width: 100%;
+}
+
+.modul-description h3, .modul-description p{
+    padding: 0 0.5rem;
+}
+
+.modul-description p{
+    padding-top: 0.5rem;
+    color: white;
 }
 
 .modul-description .status{
@@ -234,16 +243,24 @@
     color: var(--text-color);
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 680px) {
 
-    .learning-hero-content{
-          order: 1;
-          text-align: left;
-    }
+.learning-hero-content{
+        order: 1;
+  }
 
-    .learning-hero-image{
-          margin-bottom: 0px;
-          order: 2 ;
+  .learning-hero-image{
+    order: 2;
+}
+
+.learning-hero-container{
+    flex-direction: row;
+}
+
+    .learning-discover-container-1{
+        flex-direction: row;
+        width: 90%;
+        height: 250px;
     }
 
     .learning-hero-description{
@@ -258,16 +275,18 @@
           width: 44px;
     }
 
+    .learning-discover-container-2{
+        flex-direction: row;
+    }
+
+    #getStarted{
+        width: 40%;
+        padding: 2%;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
-
-    .learning-discover-container-1{
-          display: grid;
-          grid-template-columns: 3fr 2fr;
-    }
-
-
     .discover-modul h1{
           width: 60%;
           font-size: 35px;

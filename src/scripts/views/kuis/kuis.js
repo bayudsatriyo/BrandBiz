@@ -28,7 +28,6 @@ const KuisPage = {
   <thead>
     <tr>
       <th>Tanggal</th>
-      <th>Nama Kuis</th>
       <th>Nilai Kuis</th>
       <th>Presentase</th>
       <th>Status</th>
@@ -37,6 +36,10 @@ const KuisPage = {
   <tbody>
   </tbody>
 </table>
+      </div>
+      <div class="transition_page">
+      <button type="button" class="back">Sebelumnya</button>
+      <button type="button" class="next">Selanjutnya</button>
       </div>
         `;
   },
@@ -124,6 +127,29 @@ const KuisPage = {
       datasoal.length = 0;
       console.log(datasoal);
     });
+    const linkNext = document.querySelector('.next');
+    const linkBack = document.querySelector('.back');
+    if(indexkuis == 4){
+      linkNext.setAttribute('hidden', '');
+    }else{
+      linkNext.removeAttribute('hidden');
+    }
+    linkNext.addEventListener('click', (event) => {
+      let linkSoal = document.querySelector(`.next${indexkuis + 1}`);
+      console.log(linkSoal);
+      linkSoal.click();
+    })
+
+    linkBack.addEventListener('click', (event) => {
+      let linkSoalLalu = null;
+      if(indexkuis == 0){
+        linkSoalLalu = document.querySelector('.evaluasi');
+        linkSoalLalu.click();
+      }else{
+        linkSoalLalu = document.querySelector(`.next${indexkuis - 1}`);
+        linkSoalLalu.click();
+      }
+    })
   },
 };
 

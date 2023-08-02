@@ -6,6 +6,9 @@ import '../styles/learning.css';
 import '../styles/news.css';
 import '../styles/about.css';
 import swRegister from './utils/sw-register';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import './views/footer.js'
 
 import App from './views/app';
 

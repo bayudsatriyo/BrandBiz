@@ -20,6 +20,10 @@ const Merek = {
       <p>Nilai merek dapat membantu UMKM untuk membangun hubungan jangka panjang dengan pelanggan dan meningkatkan kepercayaan pelanggan pada merek dan produk Anda. Dalam waktu yang lama, nilai merek yang baik dapat meningkatkan nilai merek, konversi penjualan, dan meningkatkan reputasi UMKM yang bersangkutan.</p>
       </div>
       </div>
+      <div class="transition_page">
+      <a href="#/analisis">Sebelumnya</a>
+      <a href="#/logo">Selanjutnya</a>
+      </div>
         `;
   },
 

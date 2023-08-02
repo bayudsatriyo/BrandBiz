@@ -4,7 +4,7 @@ const Pengenalan = {
     <div class="container">
     <h1 class="judul">Pentingnya Branding Produk Industri UMKM</h1>
     <br>
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/chQrV-SAjwA" title="BRANDING: Jualan Tanpa Bicara Spek, Angka, dan Kualitas Produknya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="vidmateri" src="https://www.youtube.com/embed/chQrV-SAjwA" title="BRANDING: Jualan Tanpa Bicara Spek, Angka, dan Kualitas Produknya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="deskripsi">
     <p>Branding menjadi salah satu fokus utama yang dikejar oleh para pelaku usaha. 
     Namun, kebanyakan UMKM mulai berjualan tanpa punya brand atau merek. Padahal adanya merek membuat pemasaran menjadi lebih mudah dalam memasarkan produk. 
@@ -35,7 +35,11 @@ const Pengenalan = {
     <p>Sekarang kita telah mempelajari pengertian dari Branding Produk, pasti sobat BrandBiz penasaran dengan langkah langkah untuk melakukan
     Branding dari sebuah Produk, tanpa berlama lama mari kita lanjut ke materi berikutnya</p>
     </div>
-    </div.
+    </div>
+    <div class="transition_page">
+    <a href="#/introduction">Sebelumnya</a>
+    <a href="#/analisis">Selanjutnya</a>
+    </div>
       `;
   },
 

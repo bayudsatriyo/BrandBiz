@@ -26,6 +26,10 @@ const Analisis = {
       Anda dapat melihat bagaimana merek saingan membangun merek dan bagaimana merek mereka disampaikan kepada audiens.</p>
     </div>
     </div>
+    <div class="transition_page">
+    <a href="#/pengenalan">Sebelumnya</a>
+    <a href="#/merek">Selanjutnya</a>
+    </div>
         `;
   },
 

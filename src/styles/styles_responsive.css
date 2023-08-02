@@ -1,6 +1,6 @@
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 650px) {
     #hamburgerButton{
-      font-size: 15pt;
+      font-size: 44px;
     } 
    
     .app-bar__navigation ul li {
@@ -26,7 +26,11 @@
 
     #hamburgerButtonHome{
       display: none;
-    }    
+    }
+
+    .vidmateri{
+      height: 400px;
+    }
       .nav-list{
             display: flex;
             position: relative;
@@ -76,6 +80,11 @@
     .superior-list{
       grid-template-columns: 30% 30% 30%;
       gap: 10%;
+    }
+
+    .vidmateri{
+      width: 70%;
+      height: 600px;
     }
   }
    

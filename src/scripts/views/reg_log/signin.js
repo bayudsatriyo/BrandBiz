@@ -18,7 +18,7 @@ const signIn = {
       <div class="container">
       <div class="signin-container">
       <div class="signin-header">
-      <h2>Create Account</h2>
+      <h2>Daftar Akun</h2>
       </div>
       <div class="signin-main">
       <form id="signIn">
@@ -33,7 +33,7 @@ const signIn = {
         </div>
         
         <div class="form-group">
-        <label for="whatsapp" class="inputan">No Whatsapp:</label>
+        <label for="whatsapp" class="inputan">Nomor Whatsapp:</label>
         <input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9]{10,14}" required>
         </div>
         <div class="form-group">
@@ -41,7 +41,7 @@ const signIn = {
         <input type="text" id="jenis_usaha" name="jenis_usaha" required>
         </div>
         <div class="form-group">
-        <label for="password" class="inputan">Password:</label>
+        <label for="password" class="inputan">Kata Sandi:</label>
         <div class="inputPassword">
         <input type="password" id="password" name="password" required>
         <button type="button" id="showPassword">Show</button>
