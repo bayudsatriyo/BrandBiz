@@ -75,7 +75,7 @@
   }
   .app-bar__navigation {
     position: fixed;
-    top: 40px;
+    top: 25px;
     right: -50%;
     width: 30%;
     transition: all 0.3s;
@@ -85,10 +85,9 @@
     flex-direction: column;
     align-items: center;
     overflow-x: auto;
-    height: calc(100% - 56px);
+    height: calc(100% - 40px);
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    z-index: 100;
   }
 
   .app-bar__navigation::-webkit-scrollbar {

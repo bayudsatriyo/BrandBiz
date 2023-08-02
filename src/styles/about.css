@@ -8,6 +8,7 @@
 .about h1 {
     text-align: center;
     font-size: 36px;
+    padding-bottom: 1rem;
 }
 
 .about p {
@@ -19,9 +20,10 @@
 .tim-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .tim {
@@ -31,6 +33,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 1rem;
+    border-radius: 1rem;
 }
 
 .tim img {
@@ -58,7 +61,7 @@
 }
 
 .blue {
-    background-color: #007aaf;
+    background-color: #2986c9;
     color: #ffffff;
 }
 
