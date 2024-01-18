@@ -3,7 +3,7 @@ const Merek = {
     return `
       <div class="container">
       <h1 class="judul">Definisi Nilai Merek Dalam Branding</h1>
-      <img src="https://i.postimg.cc/sgYpXtG1/6666301.jpg" alt="introduction" crossorigin="anonymous">
+      <img src="6666301.jpg" alt="introduction" crossorigin="anonymous">
       <div class="deskripsi">
       <h1>Apakah kalian sudah mengetahui apa itu Merek ?</h1>
       <p>Merek adalah simbol, vokal, atau desain tertentu yang digunakan oleh suatu perusahaan untuk membedakan produk atau layanannya dari produk atau 
@@ -29,17 +29,19 @@ const Merek = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
-    const hamburgerHome = document.getElementById('hamburgerButtonHome');
-    hamburgerHome.setAttribute('hidden', '');
-    const TombolLogin = document.getElementById('signInHome');
-    TombolLogin.setAttribute('hidden', '');
-    const logo = document.querySelector('.nav-title img');
-    logo.setAttribute('hidden', '');
-    const backButton = document.getElementById('back');
-    backButton.removeAttribute('hidden');
-    const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
+    const hamburgerHome = document.getElementById("hamburgerButtonHome");
+    hamburgerHome.setAttribute("hidden", "");
+    const TombolLogin = document.getElementById("signInHome");
+    TombolLogin.setAttribute("hidden", "");
+    const logo = document.querySelector(".nav-title img");
+    logo.setAttribute("hidden", "");
+    const backButton = document.getElementById("back");
+    backButton.removeAttribute("hidden");
+    const navigation = document.querySelectorAll(
+      "#navigationDrawerHome .listnav"
+    );
     navigation.forEach((nav) => {
-      nav.setAttribute('hidden', '');
+      nav.setAttribute("hidden", "");
     });
   },
 };

@@ -33,7 +33,7 @@ const Kontent = {
         </p>
         <p>Dalam proses pembuatan konten branding, perlu diingat bahwa tersebut tidak hanya mencakup produknya saja, tapi juga karakter dan citra merek yang ingin ditunjukkan. Oleh karena itu, penting untuk mempertimbangkan branding sebagai bagian dari 
         strategi pemasaran yang holistik, menggabungkan pencitraan dan komunikasi merek dengan kebutuhan bisnis dan pandangan jangka panjang.</p><br>
-        <img src="https://i.postimg.cc/G22DhqJq/give-away.jpg" alt="giveaway" crossorigin="anonymous">
+        <img src="give-away.jpg" alt="giveaway" crossorigin="anonymous">
         <p>Gambar diatas adalah contoh kontent dalam bentuk gambar yang di promosikan melalui platform media sosial</p>
         </div>
         </div>
@@ -46,17 +46,19 @@ const Kontent = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
-    const hamburgerHome = document.getElementById('hamburgerButtonHome');
-    hamburgerHome.setAttribute('hidden', '');
-    const TombolLogin = document.getElementById('signInHome');
-    TombolLogin.setAttribute('hidden', '');
-    const logo = document.querySelector('.nav-title img');
-    logo.setAttribute('hidden', '');
-    const backButton = document.getElementById('back');
-    backButton.removeAttribute('hidden');
-    const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
+    const hamburgerHome = document.getElementById("hamburgerButtonHome");
+    hamburgerHome.setAttribute("hidden", "");
+    const TombolLogin = document.getElementById("signInHome");
+    TombolLogin.setAttribute("hidden", "");
+    const logo = document.querySelector(".nav-title img");
+    logo.setAttribute("hidden", "");
+    const backButton = document.getElementById("back");
+    backButton.removeAttribute("hidden");
+    const navigation = document.querySelectorAll(
+      "#navigationDrawerHome .listnav"
+    );
     navigation.forEach((nav) => {
-      nav.setAttribute('hidden', '');
+      nav.setAttribute("hidden", "");
     });
   },
 };

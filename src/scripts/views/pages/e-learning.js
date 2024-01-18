@@ -1,9 +1,9 @@
-import 'lazysizes';
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 const ELearning = {
-    async render() {
-      return `
+  async render() {
+    return `
       <section class="learning-hero">
       <div class="learning-hero-container">
         <div class="learning-hero-content">
@@ -17,7 +17,7 @@ const ELearning = {
             <a href="#/introduction" id="getStarted">Get Started</a>
         </div>
         <div class="learning-hero-image">
-          <img class="lazyload" data-src="https://i.postimg.cc/SxBCc8dP/Banner-Image.png" alt="Banner Hero" />
+          <img class="lazyload" data-src="Banner-Image.png" alt="Banner Hero" />
         </div>
       </div>
     </section>
@@ -49,7 +49,7 @@ const ELearning = {
       <h1 class="how">How to do Basic Jumping and how to landing safely</h1>
       <div class="learning-discover-container-2">
         <div class="modul-item">
-          <img class="lazyload" data-src="https://i.postimg.cc/tg05z8Dp/istockphoto-1413766112-170667a.jpg" alt="Modul" />
+          <img class="lazyload" data-src="istockphoto-1413766112-170667a.jpg" alt="Modul" />
           <div class="modul-description">
             <h3 class="modul-title">
               Basic how to ride your skateboard comfortly
@@ -58,7 +58,7 @@ const ELearning = {
           </div>
         </div>
         <div class="modul-item">
-          <img class="lazyload" data-src="https://i.postimg.cc/R0RGgN2T/jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="Modul" />
+          <img class="lazyload" data-src="jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="Modul" />
           <div class="modul-description">
             <h3 class="modul-title">
               Basic how to ride your skateboard comfortly
@@ -68,55 +68,56 @@ const ELearning = {
         </div>
       </div>
 </section>        `;
-    },
-  
-    async afterRender() {
-      // Fungsi ini akan dipanggil setelah render()
-      const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
-      const navdrawer = document.querySelector('#hamburgerButton');
-      const TombolLogin = document.getElementById('signInHome');
-      const modul = document.getElementById('modul');
-      const getStarted = document.getElementById('getStarted');
-      const hamburgerHome = document.getElementById('hamburgerButtonHome');
-      TombolLogin.innerText = 'Logout';
-      navdrawer.setAttribute('hidden', '');
+  },
+
+  async afterRender() {
+    // Fungsi ini akan dipanggil setelah render()
+    const navigation = document.querySelectorAll(
+      "#navigationDrawerHome .listnav"
+    );
+    const navdrawer = document.querySelector("#hamburgerButton");
+    const TombolLogin = document.getElementById("signInHome");
+    const modul = document.getElementById("modul");
+    const getStarted = document.getElementById("getStarted");
+    const hamburgerHome = document.getElementById("hamburgerButtonHome");
+    TombolLogin.innerText = "Logout";
+    navdrawer.setAttribute("hidden", "");
+    navigation.forEach((nav) => {
+      nav.setAttribute("hidden", "");
+    });
+    TombolLogin.addEventListener("click", (event) => {
+      event.preventDefault();
+      TombolLogin.innerText = "Masuk";
+      const navigation = document.querySelectorAll(
+        "#navigationDrawerHome .listnav"
+      );
       navigation.forEach((nav) => {
-        nav.setAttribute('hidden', '');
+        nav.removeAttribute("hidden");
       });
-      TombolLogin.addEventListener('click', (event) => {
-        event.preventDefault();
-        TombolLogin.innerText = 'Masuk';
-        const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
-        navigation.forEach((nav) => {
-          nav.removeAttribute('hidden');
-        });
-        localStorage.setItem('user', 'login');
-        location.assign("#/login");
-      })
-      modul.addEventListener('click', (event) => {
-        TombolLogin.setAttribute('hidden', '');
-        navdrawer.removeAttribute('hidden');
-        hamburgerHome.setAttribute('hidden', '');
-        const logo = document.querySelector('.nav-title img');
-        logo.setAttribute('hidden', '');
-        const backButton = document.getElementById('back');
-        backButton.removeAttribute('hidden');
-        location.assign("#/introduction");
-      });
-      getStarted.addEventListener('click', (event) => {
-        TombolLogin.setAttribute('hidden', '');
-        navdrawer.removeAttribute('hidden');
-        hamburgerHome.setAttribute('hidden', '');
-        const logo = document.querySelector('.nav-title img');
-        logo.setAttribute('hidden', '');
-        const backButton = document.getElementById('back');
-        backButton.removeAttribute('hidden');
-        location.assign("#/introduction");
-      })
+      localStorage.setItem("user", "login");
+      location.assign("#/login");
+    });
+    modul.addEventListener("click", (event) => {
+      TombolLogin.setAttribute("hidden", "");
+      navdrawer.removeAttribute("hidden");
+      hamburgerHome.setAttribute("hidden", "");
+      const logo = document.querySelector(".nav-title img");
+      logo.setAttribute("hidden", "");
+      const backButton = document.getElementById("back");
+      backButton.removeAttribute("hidden");
+      location.assign("#/introduction");
+    });
+    getStarted.addEventListener("click", (event) => {
+      TombolLogin.setAttribute("hidden", "");
+      navdrawer.removeAttribute("hidden");
+      hamburgerHome.setAttribute("hidden", "");
+      const logo = document.querySelector(".nav-title img");
+      logo.setAttribute("hidden", "");
+      const backButton = document.getElementById("back");
+      backButton.removeAttribute("hidden");
+      location.assign("#/introduction");
+    });
+  },
+};
 
-
-    },
-  };
-  
-  export default ELearning;
-  
+export default ELearning;

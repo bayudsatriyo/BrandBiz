@@ -3,7 +3,7 @@ const Analisis = {
     return `
     <div class="container">
     <h1 class="judul">Kenali Audiens</h1>
-    <img src="https://i.postimg.cc/kXRwSK33/Sandy-Bus-31-Single-05.jpg" alt="introduction" crossorigin="anonymous">
+    <img src="Sandy-Bus-31-Single-05.jpg" alt="introduction" crossorigin="anonymous">
     <div class="deskripsi">
     <p>Sebagian besar pengusaha yang baru merintis produk mereka sering kali kurang mengenali dan memahami konsumen atau audiens,
       padahal ini sangatlah penting sebagai langkah awal dalam melakukan Branding. Lalu bagaimana cara kita untuk mengenali audiens atau konsumen ?</p>
@@ -35,17 +35,19 @@ const Analisis = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
-    const hamburgerHome = document.getElementById('hamburgerButtonHome');
-    hamburgerHome.setAttribute('hidden', '');
-    const TombolLogin = document.getElementById('signInHome');
-    TombolLogin.setAttribute('hidden', '');
-    const logo = document.querySelector('.nav-title img');
-    logo.setAttribute('hidden', '');
-    const backButton = document.getElementById('back');
-    backButton.removeAttribute('hidden');
-    const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
+    const hamburgerHome = document.getElementById("hamburgerButtonHome");
+    hamburgerHome.setAttribute("hidden", "");
+    const TombolLogin = document.getElementById("signInHome");
+    TombolLogin.setAttribute("hidden", "");
+    const logo = document.querySelector(".nav-title img");
+    logo.setAttribute("hidden", "");
+    const backButton = document.getElementById("back");
+    backButton.removeAttribute("hidden");
+    const navigation = document.querySelectorAll(
+      "#navigationDrawerHome .listnav"
+    );
     navigation.forEach((nav) => {
-      nav.setAttribute('hidden', '');
+      nav.setAttribute("hidden", "");
     });
   },
 };

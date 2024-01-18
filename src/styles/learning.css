@@ -1,302 +1,299 @@
-.learning-hero{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
+.learning-hero {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
-.learning-hero-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
+.learning-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
 }
 
-.learning-hero-content{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    gap: 1rem;
-    order: 2;
+.learning-hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  order: 2;
 }
 
 .learning-hero-content h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    max-width: 400px;
-    letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  max-width: 400px;
+  letter-spacing: 2px;
 }
 
-.learning-hero-description{
-    text-align: center;
-    margin: 30px auto;
-    max-width: 300px;
-    padding: 10px 5px;
+.learning-hero-description {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 300px;
+  padding: 10px 5px;
 }
 
-.learning-hero-description p{
-    font-size: 14px;
+.learning-hero-description p {
+  font-size: 14px;
 }
 
-.learning-hero-image{
-    text-align: center;
-    margin-bottom: 50px;
+.learning-hero-image {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .learning-hero-image img {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-#getStarted{
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 3%;
-    border-radius: 5%;
-    transition: .1s ease-in;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 15pt;
-    width: 45%;
-    text-align: center;
+#getStarted {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 3%;
+  border-radius: 5%;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15pt;
+  width: 45%;
+  text-align: center;
 }
 
-#getStarted:hover{
-    background-color: #fff;
-    color: #4682B4;
-    border: 1px solid #4682B4;
+#getStarted:hover {
+  background-color: #fff;
+  color: #4682b4;
+  border: 1px solid #4682b4;
 }
 
-#learnMore{
-    cursor: pointer;
-    background-color: #fff;
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
-    transition: .1s ease-in;
+#learnMore {
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  transition: 0.1s ease-in;
 }
 
-#learnMore:hover{
-    background-color: var(--background-color);
+#learnMore:hover {
+  background-color: var(--background-color);
 }
 
 /* Discover Session */
-.learning-discover{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
+.learning-discover {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .learning-discover h1 {
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--text-color);
-    text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
 }
 
-.learning-discover-container-1{
-    margin: 5% auto;
-    height: 10%;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    gap: 1rem;
-    margin-bottom: 10%;
+.learning-discover-container-1 {
+  margin: 5% auto;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 1rem;
+  margin-bottom: 10%;
 }
 
-.discover-item{
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    background: url('https://i.postimg.cc/j5g2Kw8c/image1.png');
-    background-size: cover;
+.discover-item {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: url("../public/image1.png");
+  background-size: cover;
 }
 
-.discover-item2{
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    background: url('https://i.postimg.cc/QMjdTkwS/548377-620.jpg');
-    background-size: cover;
+.discover-item2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: url("../public/548377-620.jpg");
+  background-size: cover;
 }
 
-.discover-item2 h1, .discover-item2 p{
-    color: white;
+.discover-item2 h1,
+.discover-item2 p {
+  color: white;
 }
 
-.discover-item h1:hover, .discover-item a:hover{
-    color: white;
+.discover-item h1:hover,
+.discover-item a:hover {
+  color: white;
 }
 
-.discover-modul{     
-    margin-top: 20px;
-    text-align: left;
-    padding: 30px;
-    top: 0 ;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+.discover-modul {
+  margin-top: 20px;
+  text-align: left;
+  padding: 30px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .discover-modul h1 {
-    font-size: 30px;
-    text-align: left;
+  font-size: 30px;
+  text-align: left;
 }
 
 .discover-modul a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.profile{
-    margin-top: 10px;
-    display: flex;
-    width: 100%;
+.profile {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
 }
 
-.profile-name{
-    margin: auto 0;
-    font-size: 14px;
+.profile-name {
+  margin: auto 0;
+  font-size: 14px;
 }
 
-.profile-name a{
-    color: #484848;
+.profile-name a {
+  color: #484848;
 }
 
-.profile-name-2{
-    color: #fff;
-    margin: auto 0;
-    font-size: 14px;
+.profile-name-2 {
+  color: #fff;
+  margin: auto 0;
+  font-size: 14px;
 }
 
-.learning-discover-container-2{
-    margin: 2% auto;
-    padding: 5% 0;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.learning-discover-container-2 {
+  margin: 2% auto;
+  padding: 5% 0;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.modul-item{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.modul-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.modul-item img{
-    object-fit: cover;
-    width: 100%;
-    height: 200px;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+.modul-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
-.modul-description{
-    background-color: var(--primary-color);
-    width: 100%;
-    padding: 20px 0;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+.modul-description {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 20px 0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
-.modul-item .image-avatar{
-    height: 50px;
-    width: 50px;
-    right: 2%;
-    top:  45%;
+.modul-item .image-avatar {
+  height: 50px;
+  width: 50px;
+  right: 2%;
+  top: 45%;
 }
 
-.modul-description{
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
+.modul-description {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
-.modul-description .name   {
-    font-size: 15px;
+.modul-description .name {
+  font-size: 15px;
 }
 
-.modul-description  span {
-    color: #00E995;
-    font-size: larger;
+.modul-description span {
+  color: #00e995;
+  font-size: larger;
 }
 
-.modul-description h3{
-    color: #fff;
-    width: 100%;
+.modul-description h3 {
+  color: #fff;
+  width: 100%;
 }
 
-.modul-description h3, .modul-description p{
-    padding: 0 0.5rem;
+.modul-description h3,
+.modul-description p {
+  padding: 0 0.5rem;
 }
 
-.modul-description p{
-    padding-top: 0.5rem;
-    color: white;
+.modul-description p {
+  padding-top: 0.5rem;
+  color: white;
 }
 
-.modul-description .status{
-    margin-top: 10px;
-    color: var(--text-color);
+.modul-description .status {
+  margin-top: 10px;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 680px) {
-
-.learning-hero-content{
-        order: 1;
+  .learning-hero-content {
+    order: 1;
   }
 
-  .learning-hero-image{
+  .learning-hero-image {
     order: 2;
-}
+  }
 
-.learning-hero-container{
+  .learning-hero-container {
     flex-direction: row;
-}
+  }
 
-    .learning-discover-container-1{
-        flex-direction: row;
-        width: 90%;
-        height: 250px;
-    }
+  .learning-discover-container-1 {
+    flex-direction: row;
+    width: 90%;
+    height: 250px;
+  }
 
-    .learning-hero-description{
-          border-left: 2px solid black;
-          text-align: left;
-          margin: 15px 0px;
-    }
+  .learning-hero-description {
+    border-left: 2px solid black;
+    text-align: left;
+    margin: 15px 0px;
+  }
 
+  .profile-image img {
+    height: 44px;
+    width: 44px;
+  }
 
-    .profile-image img {
-          height: 44px;
-          width: 44px;
-    }
+  .learning-discover-container-2 {
+    flex-direction: row;
+  }
 
-    .learning-discover-container-2{
-        flex-direction: row;
-    }
-
-    #getStarted{
-        width: 40%;
-        padding: 2%;
-    }
-
+  #getStarted {
+    width: 40%;
+    padding: 2%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .discover-modul h1{
-          width: 60%;
-          font-size: 35px;
-          
-    }
+  .discover-modul h1 {
+    width: 60%;
+    font-size: 35px;
+  }
 
-    .discover-modul h2 {
-          width: 50%;
-          font-size: 27px;
-          
-    }
-
+  .discover-modul h2 {
+    width: 50%;
+    font-size: 27px;
+  }
 }

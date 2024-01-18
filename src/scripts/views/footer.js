@@ -1,33 +1,33 @@
-import 'lazysizes';
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 class FooterContainer extends HTMLElement {
-    connectedCallback() {
-      this.render();
-    }
-   
-    render() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    this.innerHTML = `
       <div class="footer-container">
       <div class="footer-left-side">
         <div class="footer-logo">
-          <img class="lazyload" data-src="https://i.postimg.cc/g2XSszKw/Brand-Biz-removebg.png" alt="" />
+          <img class="lazyload" data-src="Brand-Biz-removebg.png" alt="" />
         </div>
         <div class="footer-sosmed">
           <li>
-            <a href="#"><img class="lazyload" data-src="https://i.postimg.cc/vTkdDPzD/TikTok.png" alt="" /></a>
+            <a href="#"><img class="lazyload" data-src="TikTok.png" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img class="lazyload" data-src="https://i.postimg.cc/hP1HktFf/Instagram.png" alt="" /></a>
+            <a href="#"><img class="lazyload" data-src="Instagram.png" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img class="lazyload" data-src="https://i.postimg.cc/1zkCgkxk/Linkedin.png" alt="" /></a>
+            <a href="#"><img class="lazyload" data-src="Linkedin.png" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img class="lazyload" data-src="https://i.postimg.cc/6qYfhSS5/Twitter.png" alt="" /></a>
+            <a href="#"><img class="lazyload" data-src="Twitter.png" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img class="lazyload" data-src="https://i.postimg.cc/Y2b6Z5nt/YouTube.png" alt="" /></a>
+            <a href="#"><img class="lazyload" data-src="YouTube.png" alt="" /></a>
           </li>
         </div>
       </div>
@@ -50,7 +50,7 @@ class FooterContainer extends HTMLElement {
         </div>
       </div>
     </div>`;
-    }
   }
-   
-  customElements.define('footer-container', FooterContainer);
+}
+
+customElements.define("footer-container", FooterContainer);

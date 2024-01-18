@@ -1,16 +1,16 @@
 import TestimonyDbSource from "../../data/testimonydb-source";
 import { createTestimonyItemTemplate } from "../templates/creator_template";
-import 'lazysizes';
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 function getRandomTestimonies(testimonies) {
-    const shuffledTestimonies = testimonies.sort(() => 0.5 - Math.random());
-    return shuffledTestimonies.slice(0, 4);
-  }
-  
-  const Homepage = {
-    async render() {
-      return `
+  const shuffledTestimonies = testimonies.sort(() => 0.5 - Math.random());
+  return shuffledTestimonies.slice(0, 4);
+}
+
+const Homepage = {
+  async render() {
+    return `
       <div class="container homecontainer">
       <section class="headline">
         <div class="headline-title">
@@ -25,7 +25,7 @@ function getRandomTestimonies(testimonies) {
           </p>
         </div>
         <div class="headline-image">
-          <img class="lazyload" data-src="https://i.postimg.cc/htQHZb01/6685-removebg-preview.png" alt="" />
+          <img class="lazyload" data-src="6685-removebg-preview.png" alt="" />
         </div>
       </section>
       <section class="superior">
@@ -53,7 +53,7 @@ function getRandomTestimonies(testimonies) {
       <section class="about">
         <div class="about-container">
           <div class="about-image">
-            <img class="lazyload" data-src="https://i.postimg.cc/R0RGgN2T/jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="" />
+            <img class="lazyload" data-src="jose-vazquez-Q5-RBHz9cu1-A-unsplash.jpg" alt="" />
           </div>
           <div class="about-content">
             <h2 class="about-title">About</h2>
@@ -80,7 +80,7 @@ function getRandomTestimonies(testimonies) {
           </p>
         </div>
           <div class="offering-image">
-            <img class="lazyload" data-src="https://i.postimg.cc/bwvQq351/5031659-removebg-preview.png" alt="" />
+            <img class="lazyload" data-src="5031659-removebg-preview.png" alt="" />
           </div>
         </div>
       </section>
@@ -102,32 +102,32 @@ function getRandomTestimonies(testimonies) {
       </section>
       </div>
       `;
-    },
-  
-    async afterRender() {
-        const hamburger = document.getElementById('hamburgerButton');
-        const login = document.getElementById('signInHome');
-        const learnMore = document.getElementById('learnMore');
-        hamburger.setAttribute('hidden', '');
-        login.addEventListener('click', (event) => {
-            event.preventDefault();
-            localStorage.setItem('user', 'login');
-            location.assign("#/login");
-          });
-          learnMore.addEventListener('click', (event) => {
-            event.preventDefault();
-            localStorage.setItem('user', 'login');
-            location.assign("#/login");
-          });
-      const testimonies = await TestimonyDbSource.testimonyUsers();
-      const testimonyContainer = document.querySelector('#testimonyList');
-      const randomTestimonies = getRandomTestimonies(testimonies);
-      testimonyContainer.innerHTML = '';
-  
-      randomTestimonies.forEach((testimony) => {
-        testimonyContainer.innerHTML += createTestimonyItemTemplate(testimony);
-      });
-    },
-  };
-  
-  export default Homepage;
+  },
+
+  async afterRender() {
+    const hamburger = document.getElementById("hamburgerButton");
+    const login = document.getElementById("signInHome");
+    const learnMore = document.getElementById("learnMore");
+    hamburger.setAttribute("hidden", "");
+    login.addEventListener("click", (event) => {
+      event.preventDefault();
+      localStorage.setItem("user", "login");
+      location.assign("#/login");
+    });
+    learnMore.addEventListener("click", (event) => {
+      event.preventDefault();
+      localStorage.setItem("user", "login");
+      location.assign("#/login");
+    });
+    const testimonies = await TestimonyDbSource.testimonyUsers();
+    const testimonyContainer = document.querySelector("#testimonyList");
+    const randomTestimonies = getRandomTestimonies(testimonies);
+    testimonyContainer.innerHTML = "";
+
+    randomTestimonies.forEach((testimony) => {
+      testimonyContainer.innerHTML += createTestimonyItemTemplate(testimony);
+    });
+  },
+};
+
+export default Homepage;

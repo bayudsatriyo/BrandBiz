@@ -19,7 +19,7 @@ const LogoBranding = {
       <p>Tipografi adalah gaya huruf yang digunakan dalam logo dan materi visual branding lainnya. Tipografi harus mudah dibaca, cocok untuk produk UMKM, dan mencerminkan citra merek produk.</p>
       <h1>4. Gambar</h1>
       <p>Gambar atau visualisasi produk adalah elemen visual penting dalam visual branding. Gambar harus mencerminkan merek UMKM, sesuai dengan sasarannya, dan mudah dikenali.</p>
-      <img src="https://i.postimg.cc/0j1kbHw2/stationery-mavec-19.jpg" alt="LogoBranding" crossorigin="anonymous">
+      <img src="stationery-mavec-19.jpg" alt="LogoBranding" crossorigin="anonymous">
       <p>Gambar produk produk diatas adalah implementasi dari Visual Branding, dimana secara tampilan dari desain produk mencerminkan logo produk tersebut</p>
       <br>
       <p>Selain itu, konsistensi merupakan kunci keberhasilan dalam visual branding. Semua elemen visual branding harus konsisten dalam setiap media yang digunakan untuk membangun merek. Hal ini akan membantu para pelanggan tetap mengingat dan terhubung dengan merek UMKM dengan mudah.</p>
@@ -35,17 +35,19 @@ const LogoBranding = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
-    const hamburgerHome = document.getElementById('hamburgerButtonHome');
-    hamburgerHome.setAttribute('hidden', '');
-    const TombolLogin = document.getElementById('signInHome');
-    TombolLogin.setAttribute('hidden', '');
-    const logo = document.querySelector('.nav-title img');
-    logo.setAttribute('hidden', '');
-    const backButton = document.getElementById('back');
-    backButton.removeAttribute('hidden');
-    const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
+    const hamburgerHome = document.getElementById("hamburgerButtonHome");
+    hamburgerHome.setAttribute("hidden", "");
+    const TombolLogin = document.getElementById("signInHome");
+    TombolLogin.setAttribute("hidden", "");
+    const logo = document.querySelector(".nav-title img");
+    logo.setAttribute("hidden", "");
+    const backButton = document.getElementById("back");
+    backButton.removeAttribute("hidden");
+    const navigation = document.querySelectorAll(
+      "#navigationDrawerHome .listnav"
+    );
     navigation.forEach((nav) => {
-      nav.setAttribute('hidden', '');
+      nav.setAttribute("hidden", "");
     });
   },
 };

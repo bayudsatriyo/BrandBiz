@@ -1,12 +1,12 @@
-import feedback from '../templates/form_feedback';
-import feedbackInitiator from '../../utils/feedback';
+import feedback from "../templates/form_feedback";
+import feedbackInitiator from "../../utils/feedback";
 
 const Evaluasi = {
   async render() {
     return `
         <div class="container">
         <h1 class="judul">Evaluasi dan Perbaikan</h1>
-        <img src="https://i.postimg.cc/brws2ZGr/2212205.jpg" alt="introduction" crossorigin="anonymous">
+        <img src="2212205.jpg" alt="introduction" crossorigin="anonymous">
         <div class="deskripsi">
         <p>Evaluasi dan perbaikan merupakan bagian penting dalam melakukan branding produk. Evaluasi dapat membantu perusahaan untuk mengetahui seberapa efektif strategi branding yang telah diterapkan, sedangkan perbaikan dapat membantu perusahaan untuk meningkatkan efektifitas branding produk. Berikut ini adalah penjelasan lengkap mengenai evaluasi dan perbaikan dalam melakukan branding produk:
         </p>
@@ -51,19 +51,21 @@ const Evaluasi = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
-    const hamburgerHome = document.getElementById('hamburgerButtonHome');
-    hamburgerHome.setAttribute('hidden', '');
-    const TombolLogin = document.getElementById('signInHome');
-    TombolLogin.setAttribute('hidden', '');
-    const logo = document.querySelector('.nav-title img');
-    logo.setAttribute('hidden', '');
-    const backButton = document.getElementById('back');
-    backButton.removeAttribute('hidden');
-    const navigation = document.querySelectorAll('#navigationDrawerHome .listnav');
+    const hamburgerHome = document.getElementById("hamburgerButtonHome");
+    hamburgerHome.setAttribute("hidden", "");
+    const TombolLogin = document.getElementById("signInHome");
+    TombolLogin.setAttribute("hidden", "");
+    const logo = document.querySelector(".nav-title img");
+    logo.setAttribute("hidden", "");
+    const backButton = document.getElementById("back");
+    backButton.removeAttribute("hidden");
+    const navigation = document.querySelectorAll(
+      "#navigationDrawerHome .listnav"
+    );
     navigation.forEach((nav) => {
-      nav.setAttribute('hidden', '');
+      nav.setAttribute("hidden", "");
     });
-    const feedbackContainer = document.querySelector('#formFeedback');
+    const feedbackContainer = document.querySelector("#formFeedback");
     feedbackContainer.innerHTML += feedback();
     await setTimeout(() => {}, 1000);
     feedbackInitiator(feedbackContainer);
